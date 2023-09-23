@@ -18,6 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+
+
+Route::get('/sendAPI', function () {
+    return ('Send API');
+});
+Route::get('/getAPI', function () {
+    return ('got ');
+});
+
+
+//Authentication
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -29,3 +43,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
