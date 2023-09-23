@@ -10,17 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 
 <body>
 
-    <div>
+    
+    <nav class="navbar">
         <div>
             <h1 class="logo">WebWire Tribune</h1>
         </div>
-    </div>
-    <nav class="navbar">
-        
         <div class="nav-item">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -31,6 +30,7 @@
         <div class="navbar-side">
             <li><a href="#">login</a></li>
             <li><a href="#">Registration</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a></li>
         </div>
     </nav>
     
