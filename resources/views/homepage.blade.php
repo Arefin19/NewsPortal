@@ -35,13 +35,27 @@
     </nav>
     
     
+        <img class="background-image" src="{{asset("/img/3.jpg")}}" alt="bgimage">
+    
+    
     <div class="container">
         <div class="top-container">
-            <div class="popular">
+            {{-- <div class="popular">
                 <div class="popular-title"><h1>Trending Now</h1></div>
                 <div class="popular-news"></div>
+            </div> --}}
+
+
+            <div class="map-paragraph-container">
+                <div class="map-side-content">
+                    <h2>FRIEZE SCULPTURE</h2>
+                    <p>Frieze Sculpture takes place from <strong>20 September - 29 October 2023 in The Regent’s Park's English Gardens.</strong></p>
+                    <p>With a renewed vision and an array of historical and commissioned works, Frieze Sculpture 2023 brings together a wide array of inspiring artists from around the world. The exhibition is curated by independent curator and writer Fatoş Üstek and is presented by distinguished international galleries.</p>
+                </div>
+                <div class="map"><img src="{{asset("/img/5.png")}}" alt="map"></div>
             </div>
 
+            
             <div class="body-container">
                 <h1>The Daily Star</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias, veritatis error ea eveniet iste corporis fuga atque commodi dolor repudiandae quod veniam fugiat vero doloribus optio sit quos soluta quae. Accusamus ab iusto eveniet labore dignissimos fugiat unde harum, quo dolores quae veritatis tempore tempora. Omnis incidunt, qui tenetur nisi architecto, voluptas, reprehenderit consequatur voluptates dolores eligendi dolorem odio earum accusamus eius accusantium est vero iure? Doloribus, labore! Fugit iure quos repudiandae reiciendis nam deleniti consectetur voluptas deserunt sunt facilis dolores necessitatibus voluptatum iusto, blanditiis eligendi sequi dolorem! Unde repudiandae tempora fugiat quos eos quibusdam suscipit sequi? Quis, laboriosam?</p>
