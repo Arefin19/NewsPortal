@@ -35,8 +35,9 @@
     </nav>
     
     
-        <img class="background-image" src="{{asset("/img/3.jpg")}}" alt="bgimage">
     
+        <div class="background-image1">
+        </div>
     
     <div class="container">
         <div class="top-container">
@@ -56,21 +57,119 @@
             </div>
 
             
-            <div class="body-container">
-                <h1>The Daily Star</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias, veritatis error ea eveniet iste corporis fuga atque commodi dolor repudiandae quod veniam fugiat vero doloribus optio sit quos soluta quae. Accusamus ab iusto eveniet labore dignissimos fugiat unde harum, quo dolores quae veritatis tempore tempora. Omnis incidunt, qui tenetur nisi architecto, voluptas, reprehenderit consequatur voluptates dolores eligendi dolorem odio earum accusamus eius accusantium est vero iure? Doloribus, labore! Fugit iure quos repudiandae reiciendis nam deleniti consectetur voluptas deserunt sunt facilis dolores necessitatibus voluptatum iusto, blanditiis eligendi sequi dolorem! Unde repudiandae tempora fugiat quos eos quibusdam suscipit sequi? Quis, laboriosam?</p>
-
-                <h1>Prothom Alo</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum dicta nostrum asperiores voluptate in nobis architecto incidunt ullam enim accusantium nesciunt, culpa sit cumque ipsa itaque voluptates hic unde perspiciatis magni placeat provident aliquam? Corrupti, esse, facere rem deleniti est illum nam, sapiente perspiciatis reprehenderit illo unde! Suscipit explicabo adipisci, consequatur nihil magnam odio dignissimos labore voluptatum ipsa temporibus natus nemo. Corrupti, perferendis. Exercitationem molestiae perspiciatis nisi optio omnis porro in fuga architecto. Ad excepturi modi perspiciatis ab esse odit voluptatem culpa reprehenderit, eos eum aspernatur tenetur autem, neque corrupti tempora beatae assumenda reiciendis magni. Tenetur quia consequuntur ipsam!</p>
+            <div class="text-content-container">
+                <div class="text-container">
+                    <h2> LATEST</h2>
+                    <p>Articles, reviews and news from frieze magazine and fairs</p>
+                </div>
+                <div class=""></div>
             </div>
+
+            {{-- article section 1--}}
+            <div class="article-container">
+                <div class="article">
+                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article">
+                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article">
+                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article">
+                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+            </div>
+
+
+            {{-- article section 2--}}
+
+            <div class="article-container">
+                <div class="article-container">
+                <div class="article">
+                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article">
+                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article">
+                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article">
+                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div></div>
+        </div>        
+    </div>
+</div>
+
+<div class="background-image2">
         </div>
 
+<footer class="page-footer">
+                    <div class="catagory-container">
+                        <div class="catagory">
+                        <h4>THE COMPANY</h4>
+                        <p>ABOUT</p>
+                        <p>VIP TEAM</p>
+                        <p>PARTNERS</p>
+                        <p>PRESS</p>
+                        <p>CAREERS</p>
+                        <p>ADVERTISE</p>
+                        <p>CONTACT US</p>
+                        </div>
+                        <div class="catagory">
+                        <h4>HELP</h4>
+                        <p>MEMBERSHIP FAQS</p>
+                        <p>PRIVACY POLICY</p>
+                        <p>LEGALS</p>
+                        <p>COOKIE POLICY</p>
+                        </div>
+                        <div class="catagory">
+                        <h4>FOLLOW US</h4>
+                        <p>FACEBOOK</p>
+                        <p>TWITTER</p>
+                        <p>INSTAGRAM</p>
+                        
+                        </div>
+                    </div>
 
-        <footer class="">
 
+
+                <div class="footer-search-container">
+                        <div class="footer-search-text">
+                        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                        <p>Sign up for email updates on the latest frieze talks, fairs and events.</p>
+                        </div>
+                    <div class="footer-search">
+                    <input class="search-box" type="text" placeholder=" Enter your email here">
+                    </div>
+                </div>
+                
         </footer>
-    </div>
-
 
 </body>
 
