@@ -33,17 +33,15 @@
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a></li>
         </div>
     </nav>
-    
-    
+
     
         <div class="background-image1">
-            <h2></h2>
+            <div class="centered-text1"><a href="#">Revisiting the Dandy Canon, From Baudelaire to Bloomsbury</a></div> <br>
+            <div class="centered-text2">How Blackness shaped the look of queer modernism</div> <br>
+            <div class="centered-text3">OPINION | SHOLA VON REINHOLD</div>
         </div>
 
-        
-        
-        
-        
+
         <div class="container">
             <div class="top-container">
                     
