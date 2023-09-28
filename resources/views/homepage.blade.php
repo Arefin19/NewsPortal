@@ -37,11 +37,55 @@
     
     
         <div class="background-image1">
+            <h2></h2>
         </div>
-    
-    <div class="container">
-        <div class="top-container">
-            
+
+        
+        
+        
+        
+        <div class="container">
+            <div class="top-container">
+                    
+                    <div class="text-content-container1">
+                        <div class="text-container1">
+                        <h2> LATEST NEWS</h2>
+                        <p>Articles, reviews and news from frieze magazine and fairs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="article-container">
+                <div class="article">
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl11.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl12.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl13.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl14.jpg")}}" alt="">
+                    <p class="small-text">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
             <div class="map-paragraph-container">
                 <div class="map-side-content">
@@ -52,16 +96,17 @@
                 <div class="map"><img src="{{asset("/img/5.png")}}" alt="map"></div>
             </div>
 
-            
-            <div class="text-content-container">
-                <div class="text-container">
+<div class="background-image3">
+</div>
+
+            <div class="text-content-container2">
+                <div class="text-container2">
                     <h2> LATEST</h2>
                     <p>Articles, reviews and news from frieze magazine and fairs</p>
                 </div>
                 
             </div>
-<div class="background-image3">
-        </div>
+
 
             {{-- article section --}}
             <div class="article-container">
@@ -110,7 +155,7 @@
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
                 <div class="article-item">
-                    <img src="{{asset("/img/artcl24.jpeg")}}" alt="">
+                    <img src="{{asset("/img/artcl24.jpg")}}" alt="">
                     <p class="small-text">Latest</p>
                     <p><a href="#">Revealed: Highlights of Frieze London</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
