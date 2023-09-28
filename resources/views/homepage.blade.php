@@ -41,11 +41,7 @@
     
     <div class="container">
         <div class="top-container">
-            {{-- <div class="popular">
-                <div class="popular-title"><h1>Trending Now</h1></div>
-                <div class="popular-news"></div>
-            </div> --}}
-
+            
 
             <div class="map-paragraph-container">
                 <div class="map-side-content">
@@ -62,67 +58,67 @@
                     <h2> LATEST</h2>
                     <p>Articles, reviews and news from frieze magazine and fairs</p>
                 </div>
-                <div class=""></div>
+                
             </div>
+<div class="background-image3">
+        </div>
 
-            {{-- article section 1--}}
+            {{-- article section --}}
             <div class="article-container">
                 <div class="article">
+                <div class="article-item">
                     <img src="{{asset("/img/article_img1.jpg")}}" alt="">
                     <p class="small-text">Latest</p>
                     <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-                <div class="article">
+                <div class="article-item">
                     <img src="{{asset("/img/article_img2.png")}}" alt="">
                     <p class="small-text">Latest</p>
                     <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-                <div class="article">
+                <div class="article-item">
                     <img src="{{asset("/img/article_img3.jpg")}}" alt="">
                     <p class="small-text">Latest</p>
                     <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-                <div class="article">
+                <div class="article-item">
                     <img src="{{asset("/img/article_img4.jpg")}}" alt="">
                     <p class="small-text">Latest</p>
-                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-            </div>
 
-
-            {{-- article section 2--}}
-
-            <div class="article-container">
-                <div class="article-container">
-                <div class="article">
-                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl21.jpeg")}}" alt="">
                     <p class="small-text">Latest</p>
                     <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-                <div class="article">
-                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl22.jpeg")}}" alt="">
                     <p class="small-text1">Latest</p>
                     <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-                <div class="article">
-                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl23.jpeg")}}" alt="">
                     <p class="small-text">Latest</p>
                     <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
-                <div class="article">
-                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                <div class="article-item">
+                    <img src="{{asset("/img/artcl24.jpeg")}}" alt="">
                     <p class="small-text">Latest</p>
-                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-                </div></div>
-        </div>        
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 
@@ -167,8 +163,7 @@
                     <div class="footer-search">
                     <input class="search-box" type="text" placeholder=" Enter your email here">
                     </div>
-                </div>
-                
+                </div>              
         </footer>
 
 </body>

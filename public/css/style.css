@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 /*navbar css*/
@@ -58,7 +59,7 @@ body {
 
 .logo {
     display: block;
-    font-family: Skranji;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     justify-content: center;
     padding: 1px 10px;
@@ -84,6 +85,8 @@ body {
     gap: 1rem;
     padding: 2rem;
     padding-left: 0;
+    padding-right: 0;
+    /* width: 100%; */
 }
 
 /* container */
@@ -113,7 +116,7 @@ body {
 .background-image1 {
     width: 100%;
     height: 400px;
-    background-image: url("/img/4.jpg");
+    background-image: url("/img/drawingroom.jpg");
     background-position: 0;
     display: flex;
     justify-content: center;
@@ -129,17 +132,12 @@ body {
     display: flex;
     padding-left: 0;
     vertical-align: top;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
 }
 .map-paragraph-container div {
     width: 45%;
 }
-/* .map-side-content {
-    width: 500px;
-    padding-right: 30px;
-    padding-left: 50px;
-} */
 
 .map-side-content h2 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -167,14 +165,18 @@ body {
     display: flex;
     padding-left: 0;
     vertical-align: top;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: #2c2c2c;
 }
 .text-content-container div {
-    width: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-container h2 {
@@ -196,35 +198,10 @@ body {
 
 /* article content container */
 
-.article-container {
-    display: flex;
-    width: 100%;
-    padding-left: 2rem;
-    justify-content: space-between;
-}
-
 .article img {
-    width: 280px;
-    object-fit: contain;
-    object-position: top;
-    border-width: 2px;
-}
-.article2 img {
-    width: 280px;
-    object-fit: contain;
-    object-position: top;
-    border-width: 2px;
-}
-.article3 img {
-    width: 280px;
-    object-fit: contain;
-    object-position: top;
-    border-width: 2px;
-}
-.article4 img {
-    width: 280px;
-    object-fit: contain;
-    object-position: top;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
     border-width: 2px;
 }
 .small-text1 {
@@ -237,23 +214,57 @@ body {
     font-family: regfont;
     font-size: 11px;
 }
+
+.article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.article-item {
+    width: 20%;
+}
+
 .article-container p a {
     text-decoration: none;
     font-family: regfont;
     font-size: 19px;
     color: #000000;
 }
+
 .article-container a {
     font-size: 11px;
 }
+
 .article-container,
-.article1 p a:hover {
+.article p a:hover {
     color: #808080;
 }
 .background-image2 {
     width: 100%;
     height: 400px;
-    background-image: url("/img/bg2.jpg");
+    background-image: url("/img/orangesofa.jpg");
+    background-position: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0px;
+    background-size: cover;
+}
+.background-image3 {
+    width: 100%;
+    height: 400px;
+    background-image: url("/img/room.jpg");
     background-position: 0;
     display: flex;
     justify-content: center;
@@ -267,11 +278,11 @@ body {
 .page-footer {
     background-color: rgb(238, 238, 238);
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 4rem 8rem;
     justify-content: center;
     align-items: baseline;
-    gap: 200px;
+    gap: 150px;
     border-top: 2px solid #919090;
     margin-top: 2rem;
 }
@@ -319,7 +330,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 150px;
-    margin-left: -150px;
+    /* margin-left: -150px; */
 }
 .footer-search-container {
     display: flex;
@@ -327,4 +338,3 @@ body {
     gap: 1.5rem;
     margin-top: 1rem;
 }
-
