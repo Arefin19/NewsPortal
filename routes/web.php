@@ -22,6 +22,9 @@ Route::get('/homepage', function () {
     return view('homepage');
 });
 
+Route::get('/Category', function () {
+    return view('category');
+});
 
 Route::get('/sendAPI', function () {
     return ('Send API');
