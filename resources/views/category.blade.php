@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
     <link href="{{asset('css/footer.css')}}" rel="stylesheet">
+    <link href="{{asset('css/category.css')}}" rel="stylesheet">
     <title>Category</title>
 </head>
 <body>
@@ -26,6 +27,95 @@
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a></li>
         </div>
     </nav>
+
+    <header>
+        <h1>Local</h1>
+    </header>
+    <section class="news-container">
+      
+        <article class="news-item">
+            <img src ="{{asset("/img/eu.jpg")}}" alt="Article 1 Image">
+            <div class="news-info">            
+                <h2>Observers may help add credence to fairness of polls, CEC says in reply to EU</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor in urna varius faucibus.</p>
+                <a href="article1.html">Read More</a>
+            </div>
+        </article>
+        <article class="news-item">
+            <img src ="{{asset("/img/kamal.jpg")}}" alt="Article 2 Image">
+            <div class="news-info">
+                <h2>Don't know who are facing US visa restrictions: home minister</h2>
+                <p>Home Minister Asaduzzaman Khan today said he did not know anything a bout Bangladeshis facing US
+                     visa restrictions. They [US] declared visa policy and we heard </p>
+                <a href="article2.html">Read More</a>
+            </div>
+        </article>
+        <article class="news-item">
+            <img src ="{{asset("/img/BTMEA.jpg")}}" alt="Article 3 Image">
+            <div class="news-info">
+                <h2>BTMA re-elects Mohammad Ali Khokon as president</h2>
+                <p>The president, three vice-presidents and 23 directors were elected unopposed.</p>
+                <a href="article2.html">Read More</a>
+            </div>
+      </article>
+        <!-- Add more news articles here -->
+    </section>
+
+    <header>
+      <h1>Business</h1>
+    </header>
+    <section class="news-container">
+    
+      <article class="news-item">
+        <img src ="{{asset("/img/grameenphone.jpg")}}" alt="Article 1 Image">
+          <div class="news-info">
+            <h2>Grameenphone launches regional design bootcamp ‘Jelay Jelay Smart Uddyokta’</h2>
+            <p>Grameenphone's flagship startup innovation platform GP Accelerator has launched "Jelay Jelay Smart
+                 Uddyokta", a regional design bootcamp with the endeavour to unleash the potential of youth 
+                 ideapreneurs.
+            </p>
+            <a href="article1.html">Read More</a>
+          </div> 
+      </article>
+      <article class="news-item">
+          <img src="article2.jpg" alt="Article 2 Image">
+          <h2>Article Title 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget           dolor in urna varius faucibus...</p>
+          <a href="article2.html">Read More</a>
+      </article>
+      <article class="news-item">
+        <img src="article2.jpg" alt="Article 2 Image">
+        <h2>Article Title 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget          dolor in urna varius faucibus...</p>
+        <a href="article2.html">Read More</a>
+    </article>
+      <!-- Add more news articles here -->
+  </section>
+  <header>
+    <h1>Sports</h1>
+  </header>
+<section class="news-container">
+  
+    <article class="news-item">
+        <img src="article1.jpg" alt="Article 1 Image">
+        <h2>Article Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget          dolor in urna varius faucibus...</p>
+        <a href="article1.html">Read More</a>
+    </article>
+    <article class="news-item">
+        <img src="article2.jpg" alt="Article 2 Image">
+        <h2>Article Title 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget          dolor in urna varius faucibus...</p>
+        <a href="article2.html">Read More</a>
+    </article>
+    <article class="news-item">
+      <img src="article2.jpg" alt="Article 2 Image">
+      <h2>Article Title 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor       in urna varius faucibus...</p>
+      <a href="article2.html">Read More</a>
+  </article>
+    <!-- Add more news articles here -->
+</section>
 
     <footer class="page-footer">
         <div class="catagory-container">
