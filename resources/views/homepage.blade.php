@@ -21,10 +21,10 @@
             <h1 class="logo">WebWire Tribune</h1>
         </div>
         <div class="nav-item">
-            <li><a href="#">Home</a></li>
+            <li><a href="/homepage">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Service</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="/Category">Category</a></li>
             <li><a href="#">Contact</a></li>
         </div>
         <div class="navbar-side">
