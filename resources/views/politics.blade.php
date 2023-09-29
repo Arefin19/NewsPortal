@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <title>Politics</title>
     <link href="{{asset('css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,16 +21,11 @@
             <h1 class="logo">WebWire Tribune</h1>
         </div>
         <div class="nav-item">
-            <li><a href="/homepage">Home</a></li>
-            {{-- <li><a href="#">About</a></li> --}}
-            <li><a href="#">Service</a></li>
-            <li><a href="/Category">Category</a></li>
-            <li><a href="#">Contact</a></li>
-            {{-- <li><a href="{{url("/homepage")}}">Home</a></li> --}}
-            {{-- <li><a href="#">Pages</a></li> --}}
-            {{-- <li><a href="#">Posts</a></li> --}}
-            {{-- <li><a href="#">Catagory</a></li> --}}
-            <li><a href="/politics">Politics</a></li>
+            <li><a href="{{url("/homepage")}}">Home</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Catagory</a></li>
+            <li><a href="{{url("/politics")}}">Politics</a></li>
             <li><a href="#">Business</a></li>
             <li><a href="#">Sports</a></li>
             <li><a href="#">Fashion</a></li>
@@ -43,14 +38,11 @@
         </div>
     </nav>
 
-    
+{{--     
         <div class="background-image1">
-            <div class="welcome-screen">
-                <h1>Revisiting the Dandy Canon, From Baudelaire to Bloomsbury</h1>
-                <p>How Blackness shaped the look of queer modernism</p>
-                <a href="#">OPINION | SHOLA VON REINHOLD</a> 
-            </div>
-            
+            <div class="centered-text1"><a href="#">Revisiting the Dandy Canon, From Baudelaire to Bloomsbury</a></div> <br>
+            <div class="centered-text2">How Blackness shaped the look of queer modernism</div> <br>
+            <div class="centered-text3">OPINION | SHOLA VON REINHOLD</div>
         </div>
 
 
@@ -119,7 +111,7 @@
 
 
             {{-- article section --}}
-            <div class="article-container">
+            {{-- <div class="article-container">
                 <div class="article">
                 <div class="article-item">
                     <img src="{{asset("/img/article_img1.jpg")}}" alt="">
@@ -175,7 +167,7 @@
 
 
     </div>
-</div>
+</div> --}} 
 
 <div class="background-image2">
         </div>

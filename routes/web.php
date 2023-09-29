@@ -21,6 +21,9 @@ Route::get('/', function () {
 Route::get('/homepage', function () {
     return view('homepage');
 });
+Route::get('/politics', function () {
+    return view('politics');
+});
 
 Route::get('/Category', function () {
     return view('category');

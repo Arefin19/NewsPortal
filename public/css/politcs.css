@@ -107,6 +107,13 @@ body {
     z-index: 1;
 }
 
+.welcome-screen {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+}
+
 .background-image2 {
     width: 100%;
     height: 500px;
@@ -131,47 +138,47 @@ body {
 }
 
 /* IMAGE TEXT */
-.welcome-screen {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+.centered-text1 {
+    font-weight: 700;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    margin: auto;
+    width: 640px;
+    padding: 50px;
+    font-family: "Lexend Deca", sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 3px 3px rgba(52, 61, 77, 0.6);
     text-align: center;
-    align-items: center;
-
-    gap: 2rem;
-    z-index: 4;
+    text-decoration: none;
 }
-.welcome-screen h1 {
-    font-family: "Lexend Deca", sans-serif;
+.centered-text2 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    margin: auto;
+    width: 640px;
+    padding: 50px;
     font-family: "Lexend Deca", sans-serif;
     color: #ffffff;
     text-shadow: 2px 3px 3px rgba(52, 61, 77, 0.6);
-    text-decoration: none;
+    text-align: center;
 }
-.welcome-screen p {
+.centered-text3 {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 11px;
+    font-family: mediumfont;
+    margin: auto;
+    width: 640px;
+    padding: 50px;
     font-family: "Lexend Deca", sans-serif;
     color: #ffffff;
     text-shadow: 2px 3px 3px rgba(52, 61, 77, 0.6);
-    text-decoration: none;
-    margin-bottom: 2rem;
+    text-align: center;
 }
-.welcome-screen a {
-    font-weight: 700;
-    font-size: 12px;
-    font-family: "Lexend Deca", sans-serif;
-    color: #ffffff;
-    text-shadow: 2px 3px 3px rgba(52, 61, 77, 0.6);
-    text-decoration: none;
-    margin-bottom: 2rem;
-}
-
 /* MAP AND IT'S SIDE TEXT CONTAINER PROPERTY */
 
 .map-paragraph-container {
