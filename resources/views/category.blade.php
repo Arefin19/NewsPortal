@@ -13,18 +13,18 @@
 <body>
     <nav class="navbar">
         <div>
-            <h1 class="logo">NewsPrk</h1>
+            <h1 class="logo">WebWire Tribune</h1>
         </div>
         <div class="nav-item">
             <li><a href="/homepage">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="/Category">Category</a></li>
-            <li><a href="#">Contact</a></li>      
+            <li><a href="/service">Service</a></li>
+            <li><a href="/category">Category</a></li>
+            <li><a href="/contact">Contact</a></li>      
             <li><a href="/politics">Politics</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Fashion</a></li>
-            <li><a href="#">More <i class="fa-solid fa-caret-down"></i></a></li>
+            <li><a href="/business">Business</a></li>
+            <li><a href="/sports">Sports</a></li>
+            <li><a href="/fashion">Fashion</a></li>
+            <li><a href="/more">More <i class="fa-solid fa-caret-down"></i></a></li>
         </div>
         <div class="navbar-side">
             <li><a href="#">login</a></li>
@@ -35,12 +35,12 @@
 
 
 
-                    <div class="text-content-container-catagorypage">
-                        <div class="text-container1-catagorypage">
-                        <h2>Catagory</h2>
-                        <p>Articles, reviews and news from NewsPrk newspaper and magazine.</p>
-                        </div>
-                    </div>
+    <div class="text-content-container-catagorypage">
+            <div class="text-container1-catagorypage">
+                <h2>Catagory</h2>
+                <p>Articles, reviews and news from NewsPrk newspaper and magazine.</p>
+            </div>
+    </div>
 
     
     {{-- <header>
@@ -132,9 +132,8 @@
     <!-- Add more news articles here -->
 </section> --}}
 
-
-
-<div class="article-container-catagory">
+<div class="container"> 
+    <div class="article-container-catagory">
                 <div class="article-catagory">
                 <div class="article-item-catagory">
                     <img src="{{asset("/img/article_img1.jpg")}}" alt="">
@@ -336,16 +335,90 @@
                     <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                 </div>
             </div>
-        </div>
+    </div>
 
 
 
-        <div class="article-catagory-beside-top-nav">
-                
-                <li><a href="">Trending</a></li>
-                <li><a href="">Latest</a></li>
-                <li><a href="">Popular</a></li>
+    <div class="article-catagory-beside">
+        
+            <div class="side-top-nav">
+                <a href="">Trending</a>
+                <a href="">Latest</a>
+                <a href="">Popular</a>
             </div>
+            
+            <div class="side-content">
+                <div class="content">
+                    <img src="{{asset("/img/artcl11.jpg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl12.jpg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl13.jpg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl14.jpg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl21.jpeg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl22.jpeg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl23.jpeg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+                <div class="content">
+                    <img src="{{asset("/img/artcl24.jpg")}}" alt="">
+                        <div class="content-details">
+                            <a href="#">Shanzhai Lyric’s Poetry of the Streets</a>
+                            {{-- <p class="small-text1" style="margin-top: 1rem;">Latest</p> --}}
+                            <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                        </div>         
+                </div>
+            </div>
+            
+        </div>
+        
+</div>
+
+
 
 
     <footer class="page-footer">

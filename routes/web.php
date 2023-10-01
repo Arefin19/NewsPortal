@@ -21,13 +21,45 @@ Route::get('/', function () {
 Route::get('/homepage', function () {
     return view('homepage');
 });
+Route::get('/category', function () {
+    return view('category');
+});
 Route::get('/politics', function () {
     return view('politics');
 });
-
-Route::get('/Category', function () {
-    return view('category');
+Route::get('/business', function () {
+    return view('business');
 });
+Route::get('/sports', function () {
+    return view('sports');
+});
+Route::get('/fashion', function () {
+    return view('fashion');
+});
+Route::get('/more', function () {
+    return view('more');
+});
+Route::get('/contactus', function () {
+    return view('contactus');
+});
+Route::get('/service', function () {
+    return view('service');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/sendAPI', function () {
     return ('Send API');

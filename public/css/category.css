@@ -103,36 +103,93 @@ header {
 
 /* Article catagory beside content */
 
-.article-catagory-beside-top-nav li a {
-    background: #fff;
+.container {
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-start;
+}
+
+.article-catagory-beside {
+    background: #ffffff;
     box-shadow: 0px 10px 40px rgba(23, 34, 43, 0.1);
-    padding: 0 30px;
-    line-height: 63px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 0px;
+    width: 30%;
+    gap: 20px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.article-catagory-beside a {
     text-decoration: none;
-    list-style-type: none;
-    text-transform: uppercase;
-    border-radius: 0;
-    font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
     color: rgba(23, 34, 43, 0.85);
-    display: inline-block;
     font-family: "Heebo", sans-serif;
-    font-weight: 300;
     font-size: 15px;
-    color: #515a60;
-    line-height: 24px;
+    height: 30px;
 }
 
-.article-catagory-beside-top-nav li a:active {
+.side-top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.side-top-nav a {
+    display: flex;
+    justify-content: center;
+    line-height: 36px;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 40px rgba(23, 34, 43, 0.15);
+    margin: 0px 5px;
+    padding: 10px 20px;
+    align-items: center;
+    color: rgba(23, 34, 43, 0.85);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Heebo";
+    border-radius: 10px;
+}
+
+.side-top-nav a:hover {
     background-color: #1091ff;
     color: #fff;
+    transition-duration: 0.5s;
 }
-.article-catagory-beside-top-nav li {
-    text-align: -webkit-match-parent;
+.side-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 45px;
+    overflow: hidden;
+    gap: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.content img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
 }
 
-.article-catagory-beside-top-nav div {
+.content-details {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.content-details a,
+.content-details p {
+    margin-top: 5px;
+    margin-left: 1rem;
+}
+.content-details a,
+.content-details p {
+    font-weight: 700;
 }

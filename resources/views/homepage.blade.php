@@ -20,18 +20,18 @@
     
     <nav class="navbar">
         <div>
-            <h1 class="logo">NewsPrk</h1>
+            <h1 class="logo">WebWire Tribune</h1>
         </div>
         <div class="nav-item">
             <li><a href="/homepage">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="/Category">Category</a></li>
-            <li><a href="#">Contact</a></li>      
+            <li><a href="/service">Service</a></li>
+            <li><a href="/category">Category</a></li>
+            <li><a href="/contact">Contact</a></li>      
             <li><a href="/politics">Politics</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Fashion</a></li>
-            <li><a href="#">More <i class="fa-solid fa-caret-down"></i></a></li>
+            <li><a href="/business">Business</a></li>
+            <li><a href="/sports">Sports</a></li>
+            <li><a href="/fashion">Fashion</a></li>
+            <li><a href="/more">More <i class="fa-solid fa-caret-down"></i></a></li>
         </div>
         <div class="navbar-side">
             <li><a href="#">login</a></li>
