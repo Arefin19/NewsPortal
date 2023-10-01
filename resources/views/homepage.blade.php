@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
+    <link href="{{asset('css/footer.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -18,18 +20,13 @@
     
     <nav class="navbar">
         <div>
-            <h1 class="logo">WebWire Tribune</h1>
+            <h1 class="logo">NewsPrk</h1>
         </div>
         <div class="nav-item">
             <li><a href="/homepage">Home</a></li>
-            {{-- <li><a href="#">About</a></li> --}}
             <li><a href="#">Service</a></li>
             <li><a href="/Category">Category</a></li>
-            <li><a href="#">Contact</a></li>
-            {{-- <li><a href="{{url("/homepage")}}">Home</a></li> --}}
-            {{-- <li><a href="#">Pages</a></li> --}}
-            {{-- <li><a href="#">Posts</a></li> --}}
-            {{-- <li><a href="#">Catagory</a></li> --}}
+            <li><a href="#">Contact</a></li>      
             <li><a href="/politics">Politics</a></li>
             <li><a href="#">Business</a></li>
             <li><a href="#">Sports</a></li>

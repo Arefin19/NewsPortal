@@ -7,19 +7,24 @@
     <link href="{{asset('css/navbar.css')}}" rel="stylesheet">
     <link href="{{asset('css/footer.css')}}" rel="stylesheet">
     <link href="{{asset('css/category.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <title>Category</title>
 </head>
 <body>
     <nav class="navbar">
         <div>
-            <h1 class="logo">WebWire Tribune</h1>
+            <h1 class="logo">NewsPrk</h1>
         </div>
         <div class="nav-item">
             <li><a href="/homepage">Home</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="/Category">Category</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Contact</a></li>      
+            <li><a href="/politics">Politics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">More <i class="fa-solid fa-caret-down"></i></a></li>
         </div>
         <div class="navbar-side">
             <li><a href="#">login</a></li>
@@ -28,7 +33,17 @@
         </div>
     </nav>
 
-    <header>
+
+
+                    <div class="text-content-container-catagorypage">
+                        <div class="text-container1-catagorypage">
+                        <h2>Catagory</h2>
+                        <p>Articles, reviews and news from NewsPrk newspaper and magazine.</p>
+                        </div>
+                    </div>
+
+    
+    {{-- <header>
         <h1>Local</h1>
     </header>
     <section class="news-container">
@@ -115,7 +130,223 @@
       <a href="article2.html">Read More</a>
   </article>
     <!-- Add more news articles here -->
-</section>
+</section> --}}
+
+
+
+<div class="article-container-catagory">
+                <div class="article-catagory">
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl21.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl22.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl23.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl24.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl21.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl22.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl23.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl24.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl21.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl22.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl23.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl24.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img1.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img2.png")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img3.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/article_img4.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl21.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl22.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl23.jpeg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+                <div class="article-item-catagory">
+                    <img src="{{asset("/img/artcl24.jpg")}}" alt="">
+                    <p class="small-text1">Latest</p>
+                    <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                    <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="article-catagory-beside-top-nav">
+                
+                <li><a href="">Trending</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Popular</a></li>
+            </div>
+
 
     <footer class="page-footer">
         <div class="catagory-container">
@@ -158,4 +389,3 @@
     </div>              
 </footer>
 </body>
-</html>
