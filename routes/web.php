@@ -24,6 +24,9 @@ Route::get('/homepage', function () {
 Route::get('/category', function () {
     return view('category');
 });
+Route::get('/contactus', function () {
+    return view('contact');
+});
 Route::get('/politics', function () {
     return view('politics');
 });
@@ -36,15 +39,7 @@ Route::get('/sports', function () {
 Route::get('/fashion', function () {
     return view('fashion');
 });
-Route::get('/more', function () {
-    return view('more');
-});
-Route::get('/contactus', function () {
-    return view('contactus');
-});
-Route::get('/service', function () {
-    return view('service');
-});
+
 
 
 

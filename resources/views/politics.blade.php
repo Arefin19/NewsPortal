@@ -17,14 +17,14 @@
         </div>
         <div class="nav-item">
             <li><a href="/homepage">Home</a></li>
-            <li><a href="/service">Service</a></li>
+             
             <li><a href="/category">Category</a></li>
-            <li><a href="/contact">Contact</a></li>      
+            <li><a href="/contactus">Contact</a></li>      
             <li><a href="/politics">Politics</a></li>
             <li><a href="/business">Business</a></li>
             <li><a href="/sports">Sports</a></li>
             <li><a href="/fashion">Fashion</a></li>
-            <li><a href="/more">More <i class="fa-solid fa-caret-down"></i></a></li>
+             
         </div>
         <div class="navbar-side">
             <li><a href="#">login</a></li>
