@@ -1,5 +1,5 @@
 
-![image](doc/webwire.png)
+![image](doc/wireimg.png)
 <h2 align="center">WebWire Tribune</h2>
 <p align="center"><i>For the truth, we exist!</i></p>
 
