@@ -13,14 +13,15 @@
     
 
     <div class="form-container">
-        <form action="register.blade.php" method="post">
+    <form method="POST" action="{{ route('login') }}">
+    @csrf
             <h2 style="text-align: center; padding-bottom:2rem;">Login</h2>
             
             <div class="form-group">
                 <input type="email" class="form-control" name="email" placeholder="Enter your email">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" name="name" placeholder="Enter password">
+                <input type="password" class="form-control" name="password" placeholder="Enter password">
             </div>
             
             <div class="form-btn">
