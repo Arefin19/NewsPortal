@@ -1,9 +1,18 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
 
 
+Route::post('/CreatePost', [NewsController::class,'createPost'])->name('CreatePost');
+Route::get('/adminlogin', function () {
+    return view('adminLogin');
+});
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin');
 Route::get('/', function () {
     return view('homepage');
 })->name('home');
@@ -37,7 +46,7 @@ Route::get('/api', function () {
 })->name('login');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
-
+Route::post('/Adminlogin', [AdminController::class, 'login'])->name('Adminlogin');
 
 Route::get('/sendAPI', function () {
     return ('Send API');
