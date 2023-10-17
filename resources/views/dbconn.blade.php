@@ -8,11 +8,15 @@
 <body>
         <?php
         use App\Models\User;
+        use App\Models\Admin;
 
-        $data = User::all();
+
+        $userdata = User::all();
+        $admindata = Admin::all();
+
         
             if(DB::connection()->getPdo()){
-                echo $data[0]->email;
+                echo $admindata[0]->name;
             }
         ?>
 </body>

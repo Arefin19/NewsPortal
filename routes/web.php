@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 
@@ -41,12 +42,26 @@ Route::get('/registration', function () {
     return view('registration');
 });
 
+
 Route::get('/api', function () {
     return view('dbconn');
-})->name('login');
+});
+
+
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/Adminlogin', [AdminController::class, 'login'])->name('Adminlogin');
+Route::post('/registration', [RegistrationController::class, 'registration'])->name('registration');
+
+
+
+// Route::get('/registration', [RegistrationController::class, 'create'])->name('registration');
+Route::post('/registration/store', [RegistrationController::class, 'store'])->name('store');
+
+
+
+
+
 
 Route::get('/sendAPI', function () {
     return ('Send API');

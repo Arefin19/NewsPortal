@@ -24,7 +24,7 @@
             <h1 class="logo">WebWire Tribune</h1>
         </div>
         <div class="nav-item">
-            <li><a href="/homepage">Home</a></li>
+            <li><a href="/">Home</a></li>
              
             <li><a href="/category">Category</a></li>
             <li><a href="/contactus">Contact</a></li>      

@@ -10,53 +10,49 @@
 </head>
 <body>
 
-    <?php
-    if (isset($_POST["submit"])){
-        $fullName = $_POST["fullname"];
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-        $passwordRepeat = $_POST["repeat-password"];
-        $errors = array();
-        if(empty($fullname) OR empty($email) OR empty($password) OR empty($passwordRepeat)){
-            array_push($errors, "All fields are required");
-        }
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            array_push($errors, "Email must be a valid email");
-        }
-        if(strlen($password) < 6){
-            array_push($errors, "Password must be at least 6 characters");
-        }
-        if($password!==$passwordRepeat){
-            array_push($errors, "Password does not match");
-        }
-        if(count($errors)>0){
-            foreach($errros as $error){
-                echo "<div class='alert alert-danger'>$error</div>";
-            }
-        } else{
+{{-- {{ route('registration') }} --}}
+    
 
-        }
-    }
-    ?>
-
-    <div class="form-container">
-        <form action="register.blade.php" method="post">
+<div class="form-container">
+    <form method="POST" action="{{ route('store') }}">     
+    @csrf
+        <form action="registration.blade.php" method="post">
             <h2 style="text-align: center; padding-bottom:2rem;">Registration</h2>
             <label for="name">Username</label>
             <div class="form-group">
-                <input type="text" class="form-control" name="fullname" placeholder="Enter your name" id="name">
+                <input type="text" class="form-control" name="fullname" placeholder="Enter your name" id="name" value="{{old('name')}}">
+                <span class="text-danger">
+                    @error('name')
+                        {{$message}}         
+                    @enderror
+                </span>
             </div>
             <label for="email">Email</label>
             <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Enter your email" id="email">
+                <input type="email" class="form-control" name="email" placeholder="Enter your email" id="email" value="{{old('email')}}">
+                <span class="text-danger">
+                    @error('email')
+                        {{$message}}
+                    @enderror  
+                </span>
             </div>
             <label for="password">Password</label>
             <div class="form-group">
-                <input type="password" class="form-control" name="name" placeholder="Enter password" id="password">
+                <input type="password" class="form-control" name="password" placeholder="Enter password" id="password">
+                <span class="text-danger">
+                    @error('password')
+                        {{$message}}
+                    @enderror
+                </span>
             </div>
             <label for="repassword">Password Confirmation</label>
             <div class="form-group">
-                <input type="password" class="form-control" name="repeat-password" placeholder="Retype password" id="repassword">
+                <input type="password" class="form-control" name="password_confirm" placeholder="Retype password" id="repassword">
+                <span class="text-danger">
+                    @error('password_confirm')
+                        {{$message}}
+                    @enderror
+                </span>
             </div>
             <div class="form-btn">
                 <input type="submit" class="btn btn-primary" name="submit" value="Sign Up">
