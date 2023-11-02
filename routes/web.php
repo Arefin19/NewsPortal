@@ -9,9 +9,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/category', 'CategoryController@category')->name('home.category');
     Route::get('/contactus', 'ContactController@contact')->name('home.contact');
     Route::get('/admin-login', 'AdminController@getlogin')->name('admin.login');
-    Route::get('/admin', 'AdminController@show')->name('admin.show');
     Route::post('/admin-login', 'AdminController@login')->name('admin.check');
-    Route::post('/admin', 'AdminController@createPost')->name('admin.post');
+    
 
 
     Route::group(['middleware' => ['guest']], function () {
@@ -28,5 +27,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/fashion', 'CategoryController@fashion')->name('home.fashion');
         Route::get('/politics', 'CategoryController@politics')->name('home.politics');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
+    });
+    Route::group(['middleware' => ['admin']], function () {
+        Route::get('/admin', 'AdminController@show')->name('admin.show');
+        Route::post('/admin', 'AdminController@createPost')->name('admin.post');
     });
 });
