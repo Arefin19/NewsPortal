@@ -1,5 +1,7 @@
 /* Footer */
-
+li {
+    list-style: none;
+}
 .page-footer {
     background-color: #17222b;
     display: flex;
@@ -64,4 +66,14 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 1rem;
+}
+
+.page-footer a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    text-decoration: underline;
 }

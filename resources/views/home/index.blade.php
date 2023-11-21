@@ -9,9 +9,9 @@
     @endauth --}}
     <div class="background-image1">
         <div class="welcome-screen">
-            <h1>Revisiting the Dandy Canon, From Baudelaire to Bloomsbury</h1>
-            <p>How Blackness shaped the look of queer modernism</p>
-            <a href="#">OPINION | SHOLA VON REINHOLD</a>
+            <h1>WebWire Tribune, for the truth we exist</h1>
+            <p>Simple, fast and Secure. </p>
+            <a href="#">14th November, 2023 </a>
         </div>
     </div>
 
@@ -21,7 +21,7 @@
             <div class="text-content-container1">
                 <div class="text-container1">
                     <h2> LATEST NEWS</h2>
-                    <p>Articles, reviews and news from frieze magazine and fairs</p>
+                    <p>Articles, reviews and news from WebWire Tribune magazine and fairs</p>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
                     <div class="article-item">
                         <img src="{{ asset('/img/artcl14.jpg') }}" alt="">
                         <p class="small-text">Latest</p>
-                        <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                        <p><a href="#">Revealed: Highlights of WebWire Tribune London</a></p>
                         <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                     </div>
                 </div>
@@ -56,10 +56,10 @@
 
             <div class="map-paragraph-container">
                 <div class="map-side-content">
-                    <h2>FRIEZE SCULPTURE</h2>
-                    <p>Frieze Sculpture takes place from <strong>20 September - 29 October 2023 in The Regent’s Park's
-                            English Gardens.</strong></p>
-                    <p>With a renewed vision and an array of historical and commissioned works, Frieze Sculpture 2023
+                    <h2>WEBWIRE TRIBUNE SCULPTURE</h2>
+                    <p>WebWire Tribune Sculpture takes place from <br /> 
+                        <strong>20 September - 29 October 2023 in The Regent’s Park's English Gardens.</strong></p>
+                    <p>With a renewed vision and an array of historical and commissioned works, WebWire Tribune Sculpture 2023
                         brings together a wide array of inspiring artists from around the world. The exhibition is
                         curated by independent curator and writer Fatoş Üstek and is presented by distinguished
                         international galleries.</p>
@@ -73,7 +73,7 @@
             <div class="text-content-container2">
                 <div class="text-container2">
                     <h2> LATEST</h2>
-                    <p>Articles, reviews and news from frieze magazine and fairs</p>
+                    <p>Articles, reviews and news from WebWire Tribune magazine and fairs</p>
                 </div>
 
             </div>
@@ -103,7 +103,7 @@
                     <div class="article-item">
                         <img src="{{ asset('/img/article_img4.jpg') }}" alt="">
                         <p class="small-text">Latest</p>
-                        <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                        <p><a href="#">Revealed: Highlights of WebWire Tribune London</a></p>
                         <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                     </div>
 
@@ -128,7 +128,7 @@
                     <div class="article-item">
                         <img src="{{ asset('/img/artcl24.jpg') }}" alt="">
                         <p class="small-text">Latest</p>
-                        <p><a href="#">Revealed: Highlights of Frieze London</a></p>
+                        <p><a href="#">Revealed: Highlights of WebWire Tribune London</a></p>
                         <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
                     </div>
                 </div>

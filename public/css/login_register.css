@@ -8,9 +8,9 @@ body {
 }
 
 .form-container {
-    max-width: 500px;
+    width: 500px;
     margin: auto auto;
-    padding: 50px;
+    padding: 25px 50px;
     border: 3px solid rgb(255, 255, 255) !important;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

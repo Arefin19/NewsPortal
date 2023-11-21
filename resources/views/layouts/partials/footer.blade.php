@@ -2,26 +2,26 @@
     <div class="catagory-container">
         <div class="catagory">
             <h4>THE COMPANY</h4>
-            <p>ABOUT</p>
-            <p>VIP TEAM</p>
-            <p>PARTNERS</p>
-            <p>PRESS</p>
-            <p>CAREERS</p>
-            <p>ADVERTISE</p>
-            <p>CONTACT US</p>
+             <p>ABOUT</p>
+            <li> <p>VIP TEAM</p>
+            <li><a href="">PARTNERS</a></li>
+            <li> <a href="">PRESS</a></li>
+            <li><a href="">CAREERS</a></li>
+            <li> <a href="">ADVERTISE</a></li>
+            <li> <a href="">CONTACT US</a></li>
         </div>
         <div class="catagory">
-            <h4>HELP</h4>
-            <p>MEMBERSHIP FAQS</p>
-            <p>PRIVACY POLICY</p>
-            <p>LEGALS</p>
-            <p>COOKIE POLICY</p>
+             <h4>HELP</h4>
+            <li> <a href="">MEMBERSHIP FAQS</a></li>
+            <li> <a href="">PRIVACY POLICY</a></li>
+            <li><a href="">LEGALS</a></li>
+            <li><a href="">COOKIE POLICY</a></li>
         </div>
         <div class="catagory">
             <h4>FOLLOW US</h4>
-            <p>FACEBOOK</p>
-            <p>TWITTER</p>
-            <p>INSTAGRAM</p>
+            <li><a href="https://facebook.com">FACEBOOK</a></li>
+            <li><a href="">TWITTER</a></li>
+            <li> <a href="">INSTAGRAM</a></li>
 
         </div>
     </div>

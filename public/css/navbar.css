@@ -19,13 +19,13 @@
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0.2rem;
 }
 
 .nav-item li a {
     text-decoration: none;
     color: #ffffff;
-    padding: 8px 16px;
+    padding: 4px 16px;
 }
 
 .nav-item li a:hover {
@@ -33,7 +33,6 @@
     color: rgb(0, 0, 0);
     border-radius: 8px;
 }
-
 
 /*logo css*/
 
@@ -43,7 +42,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     justify-content: center;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
 .logo:hover {
     cursor: pointer;
@@ -59,7 +58,7 @@
 .nav-item li a {
     text-decoration: none;
     color: #ffffff;
-    padding: 8px 16px;
+    padding: 4px 16px;
 }
 
 .nav-item li a:hover {
@@ -79,7 +78,7 @@
 .navbar-side li a {
     text-decoration: none;
     color: #ffffff;
-    padding: 8px 16px;
+    padding: 4px 16px;
 }
 
 .navbar-side li a:hover {
