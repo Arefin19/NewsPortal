@@ -2,29 +2,34 @@ body {
     font-family: sans-serif;
     text-align: center;
     padding-top: 10%;
-    
-    
-  }
-  
-  h1 {
+}
+.form-container {
+    width: 400px;
+    height: 300px;
+    margin: auto auto;
+    padding: 10px;
+    border: 3px solid rgb(255, 255, 255) !important;
+    border-radius: 10px;
+    box-shadow: rgba(117, 111, 111, 0.35) 0px 5px 15px;
+}
+
+h1 {
     text-align: center;
-  }
-  
-  form {
-    margin-top: 20px;
-    
-  }
-  
-  input {
-    width: 30%;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input {
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;
-  }
-  
-  .submit-button {
-    background-color: #000;
-    color: #fff;
+}
+
+.submit-button {
+    background-color: blue;
+    color: white;
     padding: 10px;
     border-radius: 5px;
-  }
-  
+}

@@ -5,7 +5,7 @@
   <link href="{{asset('css/admin.css')}}" type="text/css" rel="stylesheet">
 </head>
 <body>
-
+<div class="form-cont">
   <div class="container">
     <h1>News Portal Admin Panel</h1>
 
@@ -28,6 +28,6 @@
       </form>
     </div>
   </div>
-
+</div>
 </body>
 </html>
