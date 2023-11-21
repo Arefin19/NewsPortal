@@ -13,7 +13,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/admin', 'AdminController@show')->name('admin.show');
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
     
-
+    Route::get('/news', 'NewsController@news')->name('home.news');
 
     Route::group(['middleware' => ['guest']], function () {
         Route::get('/register', 'RegisterController@show')->name('register.show');
@@ -28,6 +28,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/business', 'CategoryController@business')->name('home.business');
         Route::get('/fashion', 'CategoryController@fashion')->name('home.fashion');
         Route::get('/politics', 'CategoryController@politics')->name('home.politics');
+        
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
     // Route::group(['middleware' => ['admin']], function () {

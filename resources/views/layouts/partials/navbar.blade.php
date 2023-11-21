@@ -1,8 +1,8 @@
 <nav class="navbar">
 
-    <div>
+    
         <h1 class="logo">WebWire Tribune</h1>
-    </div>
+    
 
     <div class="nav-item">
         <li><a href="/">Home</a></li>

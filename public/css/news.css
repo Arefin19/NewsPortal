@@ -1,0 +1,29 @@
+.whole-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 150px;
+}
+
+.left-side-section img {
+    height: 500px;
+    width: 800px;
+}
+.right-side-section {
+}
+.news-header-section p {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2rem;
+}
+
+.newscontent img {
+    height: 100px;
+    width: 100px;
+}
+
+.paragraph {
+    width: 800px;
+}
+.paragraph p {
+    text-align: justify;
+}
