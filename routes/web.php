@@ -10,9 +10,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/contactus', 'ContactController@contact')->name('home.contact');
     Route::get('/admin-login', 'AdminController@getlogin')->name('admin.login');
     Route::post('/admin-login', 'AdminController@login')->name('admin.check');
+    Route::post('/admin-upload', 'CloudinaryController@upload')->name('admin.upload');
     Route::get('/admin', 'AdminController@show')->name('admin.show');
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
-    
     Route::get('/news', 'NewsController@news')->name('home.news');
 
     Route::group(['middleware' => ['guest']], function () {

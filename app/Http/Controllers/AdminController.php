@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Admin;
 use App\Models\Post;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 class AdminController extends Controller
 {
@@ -30,19 +31,21 @@ class AdminController extends Controller
         echo "wrong password";
         // return redirect()->route('login')->with('error', 'Invalid email or password');
     }
+
     public function createPost(Request $request)
     {
-        // Validate and store the uploaded photo to Cloudinary.
-        // $uploadedPhoto = $request->file('photo')->storeOnCloudinary();
-
-        // Create a new post in your database.
         $post = new Post;
+        $image = $request->file('file');
+        $uploadedFileUrl = Cloudinary::upload($image->getRealPath(), ['folder' => 'newsportal'])->getSecurePath();
         $post->title = $request->input('headline');
-        $post->author = $request->input('author'); // Assuming you have user authentication.
-        // $post->url = $uploadedPhoto->getSecurePath(); // Store the Cloudinary URL.
+        $post->author = $request->input('author');
+        $post->url = $uploadedFileUrl;
         $post->description = $request->input('description');
+        $post->content = $request->input('body');
+        $post->source = $request->input('source');
+        $post->location = $request->input('location');
+        $post->type = $request->input('type');
         $post->save();
-
         return redirect('/admin')->with('success', 'Post created successfully');
     }
 }
