@@ -55,6 +55,8 @@
     text-align: justify;
 }
 .p1 {
+    font-weight: 500;
+    font-style: italic;
     padding-top: 1rem;
 }
 .p2 {

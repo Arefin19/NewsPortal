@@ -33,7 +33,7 @@
                         <p class="small-text">most viewed! </p>
                         <p class="small-text">views: {{$postPopular[$i]->views}}</p>
                     </div>
-                    <p class="article-title"><a href="#">{{ $postPopular[$i]->title }}</a></p>
+                    <p class="article-title"><a href="{{route('post.show', ['id' => $postPopular[$i]->post_id])}}">{{ $postPopular[$i]->title }}</a></p>
                     <p class="small-text2">{{ $postPopular[$i]->description }}</p>
             </div>
             @endfor
@@ -69,8 +69,8 @@
             @for ($i = 0; $i < 8; $i++) <div class="article-item">
                 <img src="{{ url($post[$i]->url) }}" alt="">
                 <p class="small-text">Latest</p>
-                <p><a href="#">{{$post[$i]->title}}</a></p>
-                <p class="small-text2">{{ $post[$i]->author }}| {{$post[$i]->created_at}}</p>
+                <p><a href="{{route('post.show', ['id' => $post[$i]->post_id])}}">{{$post[$i]->title}}</a></p>
+                <p class=" small-text2">{{ $post[$i]->author }}| {{$post[$i]->created_at}}</p>
         </div>
         @endfor
 
