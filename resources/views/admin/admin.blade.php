@@ -4,24 +4,27 @@
 <head>
     <title>News Portal Admin Panel</title>
     <link href="{{asset('css/admin.css')}}" type="text/css" rel="stylesheet">
-    @cloudinaryJS
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    {{-- @cloudinaryJS --}}
 </head>
 
-<body class="admin-body">
-    <div class="form-cont">
+<body>
+    <div class="full-form-container">
         <div class="container">
-            <h1>News Portal Admin Panel</h1>
-            <div class="form-container">
+            
+
+            <div class="form">
                 <form method="POST" action="{{ route('admin.post')}}" enctype="multipart/form-data">
                     @csrf
-                    <input type="text" name="headline" placeholder="Enter Headline">
-                    <input type="text" name="author" placeholder="Author name">
-                    <input type="text" name="source" placeholder="News Source">
-                    <input type="text" name="location" placeholder="Location">
-                    <textarea name="description" placeholder="Enter Description"></textarea>
-                    <textarea name="body" placeholder="Enter Full content"></textarea>
-                    <input type="file" name="file" placeholder="add image" />
-                    <select name="type">
+                    <h1>Admin Panel Posting</h1>
+                    <input type="text" name="headline" placeholder="Enter Headline" required>
+                    <input type="text" name="author" placeholder="Author name" required>
+                    <input type="text" name="source" placeholder="News Source" required>
+                    <input type="text" name="location" placeholder="Location" required>
+                    <textarea name="description" placeholder="Enter Description" required></textarea>
+                    <textarea name="body" placeholder="Enter Full content" required ></textarea>
+                    <input type="file" name="file" placeholder="add image" required />
+                    <select name="type" required>
                         <option value="">--Please choose a category--</option>
                         <option value="politics">Politics</option>
                         <option value="fashion">Fashion</option>
