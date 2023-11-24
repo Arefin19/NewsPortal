@@ -42,8 +42,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     justify-content: center;
-
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
 
 }
 .logo:hover {
@@ -60,9 +59,7 @@
 .nav-item li a {
     text-decoration: none;
     color: #ffffff;
-
     padding: 6px 16px;
-
 }
 
 .nav-item li a:hover {
