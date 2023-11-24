@@ -28,10 +28,13 @@
         <div class="article-container">
             <div class="article">
                 @for ($i = 0; $i < 4; $i++) <div class="article-item">
-                    <img src="{{ url($post[$i]->url) }}" alt="">
-                    <p class="small-text">Latest</p>
-                    <p class="article-title"><a href="#">{{ $post[$i]->title }}</a></p>
-                    <p class="small-text2">{{ $post[$i]->description }}</p>
+                    <img src="{{ url($postPopular[$i]->url) }}" alt="">
+                    <div class="title-like">
+                        <p class="small-text">most viewed! </p>
+                        <p class="small-text">views: {{$postPopular[$i]->views}}</p>
+                    </div>
+                    <p class="article-title"><a href="#">{{ $postPopular[$i]->title }}</a></p>
+                    <p class="small-text2">{{ $postPopular[$i]->description }}</p>
             </div>
             @endfor
         </div>
@@ -39,16 +42,13 @@
 
     <div class="map-paragraph-container">
         <div class="map-side-content">
-            <h2>WEBWIRE TRIBUNE SCULPTURE</h2>
-            <p>WebWire Tribune Sculpture takes place from <br />
-                <strong>20 September - 29 October 2023 in The Regent’s Park's English Gardens.</strong>
+            <h2>{{$conf->title}}</h2>
+            <p>The conference takes place from <br />
+                <strong>{{$conf->deadline}} in {{$conf->location}}</strong>
             </p>
-            <p>With a renewed vision and an array of historical and commissioned works, WebWire Tribune Sculpture 2023
-                brings together a wide array of inspiring artists from around the world. The exhibition is
-                curated by independent curator and writer Fatoş Üstek and is presented by distinguished
-                international galleries.</p>
+            <p>{{$conf->descritpion}}</p>
         </div>
-        <div class="map"><img src="{{ asset('/img/5.png') }}" alt="map"></div>
+        <div class="map"><img src="{{ url($conf->img_url) }}" alt="map"></div>
     </div>
 
     <div class="background-image3">
@@ -66,57 +66,16 @@
     {{-- article section --}}
     <div class="article-container">
         <div class="article">
-            <div class="article-item">
-                <img src="{{ asset('/img/article_img1.jpg') }}" alt="">
+            @for ($i = 0; $i < 8; $i++) <div class="article-item">
+                <img src="{{ url($post[$i]->url) }}" alt="">
                 <p class="small-text">Latest</p>
-                <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-            <div class="article-item">
-                <img src="{{ asset('/img/article_img2.png') }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-            <div class="article-item">
-                <img src="{{ asset('/img/article_img3.jpg') }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-            <div class="article-item">
-                <img src="{{ asset('/img/article_img4.jpg') }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="#">Revealed: Highlights of WebWire Tribune London</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-
-            <div class="article-item">
-                <img src="{{ asset('/img/artcl21.jpeg') }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-            <div class="article-item">
-                <img src="{{ asset('/img/artcl22.jpeg') }}" alt="">
-                <p class="small-text1">Latest</p>
-                <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-            <div class="article-item">
-                <img src="{{ asset('/img/artcl23.jpeg') }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="#">Shanzhai Lyric’s Poetry of the Streets</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
-            <div class="article-item">
-                <img src="{{ asset('/img/artcl24.jpg') }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="#">Revealed: Highlights of WebWire Tribune London</a></p>
-                <p class="small-text2">BY TAN LIN | 25 SEP 23</p>
-            </div>
+                <p><a href="#">{{$post[$i]->title}}</a></p>
+                <p class="small-text2">{{ $post[$i]->author }}| {{$post[$i]->created_at}}</p>
         </div>
+        @endfor
+
     </div>
+</div>
 </div>
 </div>
 <div class="background-image2"></div>

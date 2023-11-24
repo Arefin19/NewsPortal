@@ -10,7 +10,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/contactus', 'ContactController@contact')->name('home.contact');
     Route::get('/admin-login', 'AdminController@getlogin')->name('admin.login');
     Route::post('/admin-login', 'AdminController@login')->name('admin.check');
-    Route::post('/admin-upload', 'CloudinaryController@upload')->name('admin.upload');
+    Route::post('/admin-login', 'AdminController@conf')->name('admin.conf');
     Route::get('/admin', 'AdminController@show')->name('admin.show');
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
     Route::get('/news', 'NewsController@news')->name('home.news');
@@ -29,7 +29,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/fashion', 'CategoryController@fashion')->name('home.fashion');
         Route::get('/politics', 'CategoryController@politics')->name('home.politics');
         Route::get('/profile', 'ProfileController@profile')->name('home.profile');
-        
+
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
     // Route::group(['middleware' => ['admin']], function () {

@@ -14,7 +14,7 @@
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/category.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    @cloudinaryJS
+    <link href="{{ asset('css/contactus.css') }}" rel="stylesheet">
     <link href="{{ asset('css/news.css') }}" rel="stylesheet">
     <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
 

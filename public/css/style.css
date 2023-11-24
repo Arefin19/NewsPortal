@@ -145,7 +145,11 @@ header {
 
     padding-left: 0px;
 }
-
+.title-like{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 /* ADDITIONAL PROPERTY FOR FIRST TEXT CONTAINER */
 
 /* TEXT CONTAINER 1*/

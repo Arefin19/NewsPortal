@@ -1,0 +1,60 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.contact-container .images{
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    object-fit:cover;
+}
+.contact-container .nav{
+    display: flex;
+}
+.body_item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact_us{
+    flex-direction: column;
+    padding: 0rem 3rem;
+}
+.contact{
+    flex-direction: column;
+}
+.contact_part{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right_pannel{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+
+}
+.commercial{
+    font-size:12px ;
+    border-radius: 30px;
+
+}
+.contact-container input{
+   border-radius: 30px;
+   width: 300px;
+   height: 20px;
+   padding: auto;
+}
+.contact-container textarea{
+    border-radius: 20px;
+    width: 500px;
+    height: 60px;
+    padding: auto;
+}
