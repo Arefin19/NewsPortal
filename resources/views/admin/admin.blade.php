@@ -8,23 +8,26 @@
     {{-- @cloudinaryJS --}}
 </head>
 
-<body>
-    <div class="full-form-container">
+<body class="admin-body">
+    <div class="form-cont">
         <div class="container">
             
 
             <div class="form">
                 <form method="POST" action="{{ route('admin.post')}}" enctype="multipart/form-data">
                     @csrf
-                    <h1>Admin Panel Posting</h1>
+                    <h2>Admin Panel Posting</h2>
                     <input type="text" name="headline" placeholder="Enter Headline" required>
                     <input type="text" name="author" placeholder="Author name" required>
                     <input type="text" name="source" placeholder="News Source" required>
                     <input type="text" name="location" placeholder="Location" required>
                     <textarea name="description" placeholder="Enter Description" required></textarea>
                     <textarea name="body" placeholder="Enter Full content" required ></textarea>
-                    <input type="file" name="file" placeholder="add image" required />
-                    <select name="type" required>
+                    {{-- <input type="file" name="file"  placeholder="add image" required /> --}}
+
+                    <input type="file" name="file" class="form-control" id="customFile" required/>
+
+                    <select name="type" class="form-select" id="inputGroupSelect02" required>
                         <option value="">--Please choose a category--</option>
                         <option value="politics">Politics</option>
                         <option value="fashion">Fashion</option>
@@ -34,7 +37,8 @@
                         <option value="media">Media</option>
                         <option value="tech">Technology</option>
                     </select>
-                    <input type="submit" value="Create Post">
+                    <input class="w-100 btn btn-lg btn-light" type="submit" value="Create Post">
+                    {{-- <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button> --}}
                 </form>
             </div>
         </div>
@@ -48,7 +52,7 @@
         <div class="container">
             <h1>Add upcoming Conference</h1>
             <div class="form-container">
-                <form method="POST" action="{{ route('send.web-notification')}}" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('admin.conf')}}" enctype="multipart/form-data">
                     @csrf
                     <input type="text" id="title" name="title" placeholder="Add title">
                     <input type="text" name="deadline" placeholder="timeline">
