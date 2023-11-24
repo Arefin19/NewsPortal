@@ -14,6 +14,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/admin', 'AdminController@show')->name('admin.show');
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
     Route::get('/news', 'NewsController@news')->name('home.news');
+    Route::get('post/{id}', 'PostController@show')->name('post.show');
+
 
     Route::group(['middleware' => ['guest']], function () {
         Route::get('/register', 'RegisterController@show')->name('register.show');
