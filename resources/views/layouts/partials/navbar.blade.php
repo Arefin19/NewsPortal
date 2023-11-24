@@ -22,7 +22,7 @@
         </form>
 
         @auth
-            <p class="user">{{ auth()->user()->name }}</p>
+            <a href="/profile" class="user">{{ auth()->user()->name }}</a>
 
             <li><a href="{{ route('logout.perform') }}">Logout</a></li>
         @endauth

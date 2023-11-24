@@ -28,6 +28,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/business', 'CategoryController@business')->name('home.business');
         Route::get('/fashion', 'CategoryController@fashion')->name('home.fashion');
         Route::get('/politics', 'CategoryController@politics')->name('home.politics');
+        Route::get('/profile', 'ProfileController@profile')->name('home.profile');
         
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
