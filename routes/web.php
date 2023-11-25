@@ -15,27 +15,25 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
     Route::get('/news', 'NewsController@news')->name('home.news');
     Route::get('post/{id}', 'PostController@show')->name('post.show');
-
+    Route::post('postLike/{id}', 'PostController@setLike')->name('posts.like');
+    Route::post('postRemove/{id}', 'PostController@removeLike')->name('post.removeLike');
+    Route::get('/sports', 'CategoryController@sports')->name('home.sports');
+    Route::get('/business', 'CategoryController@business')->name('home.business');
+    Route::get('/fashion', 'CategoryController@fashion')->name('home.fashion');
+    Route::get('/politics', 'CategoryController@politics')->name('home.politics');
+    Route::get('/tech', 'CategoryController@tech')->name('home.tech');
+    Route::get('/world', 'CategoryController@world')->name('home.world');
+    Route::get('/media', 'CategoryController@media')->name('home.media');
 
     Route::group(['middleware' => ['guest']], function () {
         Route::get('/register', 'RegisterController@show')->name('register.show');
         Route::post('/register', 'RegisterController@register')->name('register.perform');
         Route::get('/login', 'LoginController@show')->name('login.show');
         Route::post('/login', 'LoginController@login')->name('login.perform');
-
     });
 
     Route::group(['middleware' => ['auth']], function () {
-        Route::get('/sports', 'CategoryController@sports')->name('home.sports');
-        Route::get('/business', 'CategoryController@business')->name('home.business');
-        Route::get('/fashion', 'CategoryController@fashion')->name('home.fashion');
-        Route::get('/politics', 'CategoryController@politics')->name('home.politics');
         Route::get('/profile', 'ProfileController@profile')->name('home.profile');
-
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
-    // Route::group(['middleware' => ['admin']], function () {
-    //     Route::get('/admin', 'AdminController@show')->name('admin.show');
-    //     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
-    // });
 });
