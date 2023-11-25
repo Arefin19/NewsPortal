@@ -27,7 +27,7 @@
                         <option value="fashion">Fashion</option>
                         <option value="sports">Sports</option>
                         <option value="world">World</option>
-                        <option value="bussiness">Bussiness</option>
+                        <option value="business">Business</option>
                         <option value="media">Media</option>
                         <option value="tech">Technology</option>
                     </select>

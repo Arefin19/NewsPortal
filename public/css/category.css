@@ -186,3 +186,15 @@
 .content-details p {
     font-weight: 700;
 }
+
+.all-category-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-types{
+    display: flex;
+    flex-direction: column;
+}
