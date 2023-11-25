@@ -33,7 +33,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     });
 
     Route::group(['middleware' => ['auth']], function () {
-        Route::get('/profile', 'ProfileController@profile')->name('home.profile');
+        Route::get('/profile/{id}', 'ProfileController@profile')->name('home.profile');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
 });
