@@ -34,7 +34,7 @@
                         <p class="small-text">views: {{$postPopular[$i]->views}}</p>
                     </div>
                     <p class="article-title"><a href="{{route('post.show', ['id' => $postPopular[$i]->post_id])}}">{{ $postPopular[$i]->title }}</a></p>
-                    <p class="small-text2">{{ $postPopular[$i]->description }}</p>
+                    <p class="small-text2">{{ $postPopular[$i]->created_at }}</p>
             </div>
             @endfor
         </div>

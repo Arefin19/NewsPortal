@@ -1,0 +1,5 @@
+.article-catagory-beside h3 {
+    display: flex;
+    justify-content: center;
+    padding-left: 0.5rem;
+}

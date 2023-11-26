@@ -3,15 +3,19 @@
 @section('content')
 <div class="container category-container">
     <div class="article-container-catagory">
-        @for($i = 0; $i < $posts->count(); $i++)
-            <div class="article-catagory">
-                <div class="article-item-catagory">
-                    <img src="{{ url($posts[$i]->url) }}" alt="">
-                    <p><a href="{{route('post.show', ['id' => $posts[$i]->post_id])}}">{{$posts[$i]->title}}</a></p>
-                    <p class="small-text2">BY {{$posts[$i]->author}} | {{$posts[$i]->created_at}}</p>
+        
+        <div class="article-catagory">
+                @for($i = 0; $i < $posts->count(); $i++)
+                <div class="card" style="width: 18rem;">
+                    <img card-img-top src="{{ url($posts[$i]->url) }}" alt="Card image cap">
+                    <div class="card-body">
+                        <p><a href="{{route('post.show', ['id' => $posts[$i]->post_id])}}">{{$posts[$i]->title}}</a></p>
+                        <p class="small-text2">BY {{$posts[$i]->author}} | {{$posts[$i]->created_at}}</p>
+                    </div>
+                    
                 </div>
-            </div>
-            @endfor
+                @endfor
+        </div>
     </div>
 
     <div class="article-catagory-beside">

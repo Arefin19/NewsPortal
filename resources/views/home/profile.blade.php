@@ -41,5 +41,6 @@
     <div class="third-column">
         <div class="mt-5 text-center"><button class="btn btn-danger" type="button">Log Out</button></div>
     </div>
+             
 </div>
 @endsection

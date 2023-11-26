@@ -187,14 +187,20 @@
     font-weight: 700;
 }
 
-.all-category-container{
+.all-category-container {
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
 }
 
-.list-types{
-    display: flex;
-    flex-direction: column;
+.all-category-container {
+    border: 3px solid #fff;
+    padding: 50px;
+}
+
+.list-types {
+    width: 50%;
+    float: left;
+    padding: 20px;
 }
