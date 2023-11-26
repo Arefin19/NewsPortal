@@ -1,0 +1,21 @@
+.first-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.second-column {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px 0px;
+    width: 30%;
+    gap: 20px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.col-md-6 {
+    padding-bottom: 0.5rem;
+}
