@@ -37,11 +37,15 @@
         </div>
     </div>
 
+        <button onclick="startFCM()"
+                    class="btn btn-danger btn-flat">Allow notification
+        </button>
+
     <div class="form-cont">
         <div class="container">
             <h1>Add upcoming Conference</h1>
             <div class="form-container">
-                <form method="POST" action="{{ route('admin.conf')}}" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('send.web-notification')}}" enctype="multipart/form-data">
                     @csrf
                     <input type="text" id="title" name="title" placeholder="Add title">
                     <input type="text" name="deadline" placeholder="timeline">
@@ -49,11 +53,64 @@
                     <input type="text" id="location" name="location" placeholder="place for conf">
                     <textarea name="description" placeholder="Enter Description"></textarea>
                     <input type="file" name="confile" placeholder="add map image" />
-                    <input type="submit" value="Create Conference">
+                    <input type="submit" value="Create Conference" id="conf-submit">
                 </form>
             </div>
         </div>
     </div>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCDeRGze7b5wM3czhBC4llPoocFlW3WmG4",
+        authDomain: "push-noti-fb9f5.firebaseapp.com",
+        projectId: "push-noti-fb9f5",
+        storageBucket: "push-noti-fb9f5.appspot.com",
+        messagingSenderId: "342247671730",
+        appId: "1:342247671730:web:2c595f591a3945140046ab"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const messaging = firebase.messaging();
+
+    function startFCM() {
+        messaging
+            .requestPermission()
+            .then(function() {
+                return messaging.getToken()
+            })
+            .then(function(response) {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    url: '{{ route("store.token") }}',
+                    type: 'POST',
+                    data: {
+                        token: response
+                    },
+                    dataType: 'JSON',
+                    success: function(response) {
+                        alert('Token stored.');
+                    },
+                    error: function(error) {
+                        alert(error);
+                    },
+                });
+            }).catch(function(error) {
+                alert(error);
+            });
+    }
+    messaging.onMessage(function(payload) {
+        const title = payload.notification.title;
+        const options = {
+            body: payload.notification.body,
+            icon: payload.notification.icon,
+        };
+        new Notification(title, options);
+    });
+</script>
 
 </html>

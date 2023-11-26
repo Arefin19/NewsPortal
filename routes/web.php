@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\API\UserDeviceAPIController;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
@@ -24,6 +24,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/tech', 'CategoryController@tech')->name('home.tech');
     Route::get('/world', 'CategoryController@world')->name('home.world');
     Route::get('/media', 'CategoryController@media')->name('home.media');
+    Route::post('/user-device/register', [UserDeviceAPIController::class, 'registerDevice'])->name('device.register');
 
     Route::group(['middleware' => ['guest']], function () {
         Route::get('/register', 'RegisterController@show')->name('register.show');
@@ -33,6 +34,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     });
 
     Route::group(['middleware' => ['auth']], function () {
+        Route::post('/store-token', 'NotificationSendController@updateDeviceToken')->name('store.token');
+        Route::post('/send-web-notification', 'NotificationSendController@sendNotification')->name('send.web-notification');
         Route::get('/profile/{id}', 'ProfileController@profile')->name('home.profile');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
