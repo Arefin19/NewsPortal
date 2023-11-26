@@ -3,10 +3,8 @@ use App\Models\Categories;
 use App\Models\User;
 $types = Categories::all();
 $user = User::where('id', auth()->id())->first();
-$userPref = json_decode($user->cat_pref, true);
-
+$userPref = $user ? json_decode($user->cat_pref, true) : null;
 @endphp
-
 
 <nav class="navbar">
     <a href="/">
