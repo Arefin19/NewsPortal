@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="form-cont">
         <div class="container">
             <div class="form">
@@ -51,6 +51,20 @@
                     <textarea name="description" placeholder="Enter Description"></textarea>
                     <input type="file" name="confile" class="form-control" id="customFile" placeholder="add map image" />
                     <input class="w-100 btn btn-lg btn-light" type="submit" value="Create Conference" id="conf-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-cont">
+        <div class="container">
+            <div class="form">
+                <form method="POST" action="{{ route('admin.conf')}}" enctype="multipart/form-data">
+                    @csrf
+                    <h2>Add upcoming Conference</h2>
+                    <input type="text" id="title" name="title" placeholder="Add title">
+                    <textarea name="description" placeholder="Enter Description"></textarea>
+                    <input class="w-100 btn btn-lg btn-light" type="submit" value="Add" id="conf-submit">
                 </form>
             </div>
         </div>

@@ -66,7 +66,10 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
-
+.admin-body {
+    display: flex;
+    flex-direction: row;
+}
 .admin-body form {
     display: flex;
     flex-direction: column;

@@ -124,6 +124,9 @@ header {
 
 .map-side-content {
     padding-left: 7rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .map-side-content h2 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -140,8 +143,13 @@ header {
         sans-serif;
     font-size: 16px;
 }
+.map {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+}
 .map img {
-    width: 550px;
+    width: 500px;
 
     padding-left: 0px;
 }
