@@ -44,27 +44,28 @@
         </div>
     </div>
 
-        <button onclick="startFCM()"
-                    class="btn btn-danger btn-flat">Allow notification
-        </button>
+        
 
     <div class="form-cont">
         <div class="container">
-            <h1>Add upcoming Conference</h1>
-            <div class="form-container">
+            <div class="form">
                 <form method="POST" action="{{ route('admin.conf')}}" enctype="multipart/form-data">
                     @csrf
+                    <h2>Add upcoming Conference</h2>
                     <input type="text" id="title" name="title" placeholder="Add title">
                     <input type="text" name="deadline" placeholder="timeline">
                     <input type="date" id="date" name="date" placeholder="date">
                     <input type="text" id="location" name="location" placeholder="place for conf">
                     <textarea name="description" placeholder="Enter Description"></textarea>
-                    <input type="file" name="confile" placeholder="add map image" />
-                    <input type="submit" value="Create Conference" id="conf-submit">
+                    <input type="file" name="confile" class="form-control" id="customFile" placeholder="add map image" />
+                    <input class="w-100 btn btn-lg btn-light" type="submit" value="Create Conference" id="conf-submit">
                 </form>
             </div>
         </div>
     </div>
+    {{-- <button onclick="startFCM()"
+                    class="btn btn-primary btn-flat">Allow notification
+        </button> --}}
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>

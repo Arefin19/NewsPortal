@@ -7,8 +7,8 @@ $userPref = $user ? json_decode($user->cat_pref, true) : null;
 @endphp
 
 <nav class="navbar">
-    <a href="/">
-        <h1 class="logo">WebWire Tribune</h1>
+    <a class="logo" href="/">
+        WebWire Tribune
     </a>
     <div class="nav-item">
         <li><a href="/">Home</a></li>
@@ -28,9 +28,9 @@ $userPref = $user ? json_decode($user->cat_pref, true) : null;
     </div>
 
     <div class="navbar-side">
-        <form class="serach-form">
+        {{-- <form class="serach-form">
             <input type="search" class="form-control search-bar" placeholder="Search..." aria-label="Search">
-        </form>
+        </form> --}}
 
         @auth
         <a href="{{route("home.profile", ['id' => auth()->id()] )}}" class="user">{{ auth()->user()->name }}</a>

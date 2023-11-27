@@ -28,13 +28,18 @@
         <div class="article-container">
             <div class="article">
                 @for ($i = 0; $i < 4; $i++) <div class="article-item">
-                    <img src="{{ url($postPopular[$i]->url) }}" alt="">
-                    <div class="title-like">
-                        <p class="small-text">Most viewed </p>
-                        <p class="small-text">views: {{$postPopular[$i]->views}}</p>
-                    </div>
-                    <p class="article-title"><a href="{{route('post.show', ['id' => $postPopular[$i]->post_id])}}">{{ $postPopular[$i]->title }}</a></p>
-                    <p class="small-text2">{{ $postPopular[$i]->created_at }}</p>
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="{{ url($postPopular[$i]->url) }}" alt="">
+                            <div class="card-body">
+                                <div class="title-like">
+                                <p class="small-text">Most viewed </p>
+                                <p class="small-text">views: {{$postPopular[$i]->views}}</p>
+                                </div>
+                                <p class="article-title"><a href="{{route('post.show', ['id' => $postPopular[$i]->post_id])}}">{{ $postPopular[$i]->title }}</a></p>
+                                <p class="small-text2">{{ $postPopular[$i]->created_at }}</p>
+                            </div>
+                            
+                    </div>                    
             </div>
             @endfor
         </div>
@@ -67,10 +72,16 @@
     <div class="article-container">
         <div class="article">
             @for ($i = 0; $i < 8; $i++) <div class="article-item">
-                <img src="{{ url($post[$i]->url) }}" alt="">
-                <p class="small-text">Latest</p>
-                <p><a href="{{route('post.show', ['id' => $post[$i]->post_id])}}">{{$post[$i]->title}}</a></p>
-                <p class=" small-text2">{{ $post[$i]->author }}| {{$post[$i]->created_at}}</p>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{ url($post[$i]->url) }}" alt="">
+                    <div class="card-body">
+                        <p class="small-text">Latest</p>
+                        <p><a href="{{route('post.show', ['id' => $post[$i]->post_id])}}">{{$post[$i]->title}}</a></p>
+                        <p class=" small-text2">{{ $post[$i]->author }}| {{$post[$i]->created_at}}</p>
+                    </div>
+                    
+                </div>
+                
         </div>
         @endfor
 

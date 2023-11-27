@@ -48,8 +48,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    padding-left: 5rem;
+    width: 70%;
+    padding-left: 1rem;
 }
 .article-container-catagory p a {
     text-decoration: none;
@@ -60,10 +60,12 @@
 .article-container-catagory a {
     font-size: 11px;
 }
+
 .article-container-catagory,
 .article-catagory p a:hover {
     color: #808080;
 }
+
 .article-catagory {
     display: flex;
     justify-content: center;
@@ -98,7 +100,11 @@
 .container {
     display: flex;
     column-gap: 20px;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    max-width: 1600px;
+    margin-right: 2rem;
+    padding-top: 4rem;
+    padding-right: 1rem;
 }
 
 .article-catagory-beside {
@@ -203,4 +209,8 @@
     width: 50%;
     float: left;
     padding: 20px;
+}
+
+.category-container img {
+    height: 150px;
 }

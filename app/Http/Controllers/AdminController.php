@@ -45,6 +45,7 @@ class AdminController extends Controller
         $post->location = $request->input('location');
         $post->type = $request->input('type');
         $post->save();
+        return redirect()->route('admin.show');
     }
 
     public function conf(Request $request)

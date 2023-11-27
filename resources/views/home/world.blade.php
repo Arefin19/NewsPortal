@@ -12,7 +12,7 @@
                         <p class="small-text2">BY {{$posts[$i]->author}} | {{$posts[$i]->created_at}}</p>
                     </div>
                 </div>
-                @endfor
+            @endfor
             </div>
     </div>
 
