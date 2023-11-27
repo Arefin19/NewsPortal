@@ -5,7 +5,7 @@
     <h1>All Categories</h1>
     <div class="list-types">
         @for($i = 0; $i < $types->count(); $i++ )
-            <i><a class="btn btn-outline-primary btn-lg" href={{route($types[$i]->route)}}>{{$types[$i]->name}}</a></i>
+            <i><a class="btn btn-outline-primary btn-lg" href={{route('category.show', ['route'=> $types[$i]->route, 'sortby'=>'created_at'])}}>{{$types[$i]->name}}</a></i>
             @endfor
     </div>
 

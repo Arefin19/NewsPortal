@@ -5,13 +5,15 @@ use App\Http\Controllers\API\UserDeviceAPIController;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
+    $route = env('APX', false);
+    $adminRoute = "/admin/"."TSUxRsSuSHNzNhZi00MTk5LTllYmMtNTljZjVmNzhhODJh".$route;
     Route::get('/', 'HomeController@index')->name('home.index');
     Route::get('/category', 'CategoryController@category')->name('home.category');
     Route::get('/contactus', 'ContactController@contact')->name('home.contact');
     Route::get('/admin-login', 'AdminController@getlogin')->name('admin.login');
     Route::post('/admin-login', 'AdminController@login')->name('admin.check');
-    Route::post('/admin-login', 'AdminController@conf')->name('admin.conf');
-    Route::get('/admin', 'AdminController@show')->name('admin.show');
+    Route::post('/admin-login/conf', 'AdminController@conf')->name('admin.conf');
+    Route::get($adminRoute, 'AdminController@show')->name('admin.show');
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
     Route::get('/news', 'NewsController@news')->name('home.news');
     Route::get('post/{id}', 'PostController@show')->name('post.show');
@@ -25,6 +27,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/world', 'CategoryController@world')->name('home.world');
     Route::get('/media', 'CategoryController@media')->name('home.media');
     Route::get('send-mail', 'MailController@index')->name('user.mail');
+    Route::get('sendMail', 'AdminController@mail')->name('admin.mail');
+    Route::get('/category/{route}/{sortby}', 'CategoryController@showCat')->name('category.show');
+
 
     Route::group(['middleware' => ['guest']], function () {
         Route::get('/register', 'RegisterController@show')->name('register.show');

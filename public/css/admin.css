@@ -7,8 +7,19 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    flex-direction: row;
+    flex-direction: column;
 }
+
+.body-item {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
 
 .container {
     width: 500px;
@@ -66,10 +77,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
-.admin-body {
-    display: flex;
-    flex-direction: row;
-}
+
 .admin-body form {
     display: flex;
     flex-direction: column;

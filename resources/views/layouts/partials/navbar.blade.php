@@ -15,7 +15,7 @@ $userPref = $user ? json_decode($user->cat_pref, true) : null;
 
         @auth
         @if($userPref)
-        @for($i=0; $i< count($userPref) ; $i++) <li><a href={{route($types[$userPref[$i]]->route)}}>{{$types[$userPref[$i]]->name}}</a></li>
+        @for($i=0; $i< count($userPref) ; $i++) <li><a href={{route('category.show', ['route'=> $types[$userPref[$i]]->route, 'sortby'=> 'created_at'])}}>{{$types[$userPref[$i]]->name}}</a></li>
             @endfor
             @else
             <li><a href="/category">Category</a></li>
