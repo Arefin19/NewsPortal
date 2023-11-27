@@ -8,10 +8,6 @@
   <div class="form-container">
     <h1>Admin Login</h1>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d546af8 (profile)
     <form method="POST" action="{{ route('admin.login') }}">
       @csrf
       <input type="text" name="email" placeholder="email"><br>

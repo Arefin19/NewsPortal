@@ -37,6 +37,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::post('/store-token', 'NotificationSendController@updateDeviceToken')->name('store.token');
         Route::post('/send-web-notification', 'NotificationSendController@sendNotification')->name('send.web-notification');
         Route::get('/profile/{id}', 'ProfileController@profile')->name('home.profile');
+        Route::post('/profile/{id}', 'ProfileController@edit')->name('profile.edit');
+        Route::post('/profileDp', 'ProfileController@changeDp')->name('profile.dp');
         Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
     });
 });
