@@ -1,12 +1,12 @@
-.profile-body{
+.profile-body {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.profile-body h4{
+.profile-body h4 {
     text-align: center;
 }
 
@@ -31,13 +31,28 @@
     padding-bottom: 0.5rem;
 }
 
-.profile-form-div{
+.profile-form-div {
     width: 100%;
 }
 
-.checkbox-class{
+.checkbox-class {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
+.mb-4 {
+    font-weight: 600;
+}
+.dp-change-button {
+    padding-top: 1rem;
+    padding-left: 0px;
+    align-items: center;
+}
+.dp-label {
+    padding-left: 12px;
+    font-weight: 600;
+}
+.form-control {
+    margin-left: 12px;
 }

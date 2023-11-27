@@ -14,8 +14,9 @@
 
             </div>
     </div>
-    <div class="second-column">
-        <form class="p-3 py-5 profile-form">
+    <div class="flex second-column">
+        <div class="border">
+            <form class="p-3 py-5 profile-form">
                 <h4 class="mb-4">Profile Settings</h4>
                 <div class="row mt-2">
                     <div class="col-md-6 profile-form-div"><label class="labels my-1">Name</label><input type="text" class="form-control" placeholder="Enter First name" value="{{$user->name}}"></div>
@@ -23,7 +24,7 @@
                 <div class="row mt-2">
                     <div class="col-md-6 profile-form-div"><label class="labels my-1">Email address</label><input type="text" class="form-control" placeholder="Enter Email id" value="{{$user->email}}"></div>
                 </div>
-                <div class"row mt-2">
+                <div class="row mt-2">
                     <div class="col-md-6 profile-form-div mt-2">
                         <label class="labels my-1">Newsletter</label>
                         <div class="checkbox-class">
@@ -32,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class"row mt-2">
+                <div class="row mt-2">
                     <div class="col-md-6 profile-form-div mt-2">
                         <label class="labels my-1">Category Preference</label>
                         <div class="checkbox-class">
@@ -43,11 +44,7 @@
                             <input type="checkbox" id="world-check" name="world-check" value="">
                             <label for="world-check">World</label><br>
                         </div>
-                        <div class="checkbox-class">
-                            <input type="checkbox" id="world-check" name="world-check" value="">
-                            <label for="world-check">World</label><br>
-                        </div>
-
+                         
     					<div class="checkbox-class">
     					    <input type="checkbox" id="sport-check" name="sport-check" value="">
     					    <label for="sport-check">Sport</label><br>
@@ -75,22 +72,35 @@
 
                     </div>
                 </div>
-                <div class="row mt-2">
-                    <label class="labels my-1">Push Notification</label>
+                <div class=" ">
+                    <label class="labels my-1">Push Notification:&nbsp;</label>
                     <button onclick="startFCM()" class="btn btn-primary btn-flat w-25">Allow</button>
                 </div>
                 <div class="mt-5 text-center"><button class="btn btn-primary btn-flat w-100" type="submit">Save Profile</button></div>
         </form>
+        </div>
+        
     </div>
 
     <div class="flex second-column">
-        <form class="p-3 py-5 profile-form">
-                <div class"row mt-2 gap-1">
-                    <label class="labels my-1">Change dp</label>
+        <div class="border">
+            <form class="p-3 py-5 profile-form">
+                <div >
+
+                </div>
+                <div class="row mt-2 gap-1">
+                    <div class="dp-label">
+                        <label class="labels my-2">Change dp</label>
+                    </div>
+                    
                     <input type="file" name="file" class="form-control" id="customFile"/>
                 </div>
-                <button class="btn btn-primary" type="button">Change dp</button>
+                <div class="dp-change-button">
+                    <button class="btn btn-primary" type="button">Change dp</button>
+                </div>                
         </form>
+        </div>
+        
     </div>
 </div>
 
