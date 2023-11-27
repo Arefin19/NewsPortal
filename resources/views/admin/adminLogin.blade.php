@@ -9,7 +9,7 @@
     <h1>Admin Login</h1>
   
 
-    <form method="POST" action="{{ route('admin.check') }}">
+    <form method="POST" action="{{ route('admin.login') }}">
       @csrf
       <input type="text" name="email" placeholder="email"><br>
       <input type="password" name="password" placeholder="Password"><br>
