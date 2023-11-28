@@ -32,7 +32,7 @@ header {
 .background-image1 {
     width: 100%;
     height: 550px;
-    background-image: url("/img/drawingroom.jpg");
+    background-image: url("/img/home.jpg");
     background-position: 0;
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ header {
 .background-image2 {
     width: 100%;
     height: 500px;
-    background-image: url("/img/orangesofa.jpg");
+    background-image: url("/img/home-top.jpg");
     background-position: 0;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@ header {
 .background-image3 {
     width: 100%;
     height: 500px;
-    background-image: url("/img/room.jpg");
+    background-image: url("/img/home-bot.jpg");
     background-position: 0;
     display: flex;
     justify-content: center;

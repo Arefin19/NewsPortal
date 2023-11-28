@@ -1,12 +1,6 @@
 @extends('layouts.app-master')
 
 @section('content')
-{{-- @auth
-        <h1>Dashboard</h1>
-        <p class="lead">Only authenticated users can access this section.</p>
-        <a class="btn btn-lg btn-primary" href="https://codeanddeploy.com" role="button">View more tutorials here
-            &raquo;</a>
-    @endauth --}}
 <div class="background-image1">
     <div class="welcome-screen">
         <h1>WebWire Tribune, for the truth we exist</h1>
@@ -20,7 +14,7 @@
 
         <div class="text-content-container1">
             <div class="text-container1">
-                <h2> LATEST NEWS</h2>
+                <h2>Most Viewd News</h2>
                 <p>Articles, reviews and news from WebWire Tribune magazine and fairs</p>
             </div>
         </div>
@@ -72,7 +66,7 @@
     <div class="article-container">
         <div class="article">
             @for ($i = 0; $i < 8; $i++) <div class="article-item">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem; height: 22rem;">
                     <img class="card-img-top" src="{{ url($post[$i]->url) }}" alt="">
                     <div class="card-body">
                         <p class="small-text">Latest</p>

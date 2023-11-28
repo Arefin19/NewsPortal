@@ -6,7 +6,7 @@
         <h1>#{{$category}}</h1>
         <div class="article-catagory">
             @for($i = 0; $i < $posts->count(); $i++)
-                <div class="card" style="width: 18rem; height: 20rem;">
+                <div class="card" style="width: 18rem; height: 22rem;">
                     <img class="card-img-top" src="{{ url($posts[$i]->url) }}" alt="Card image cap">
                     <div class="card-body">
                         <p><a href="{{route('post.show', ['id' => $posts[$i]->post_id])}}">{{$posts[$i]->title}}</a></p>

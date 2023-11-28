@@ -100,7 +100,7 @@ class AdminController extends Controller
     {
         $title = $request->input('title');
         $body = $request->input('body');
-        $emails = User::pluck('email');
+        $emails = User::where('newsletter', 1)->pluck('email');
         $mailData = [
             "title" => $title,
             "body" => $body
