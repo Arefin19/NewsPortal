@@ -7,9 +7,8 @@
 <body>
   <div class="form-container">
     <h1>Admin Login</h1>
-  
 
-    <form method="POST" action="{{ route('admin.login') }}">
+    <form method="POST" action="{{ route('admin.check') }}">
       @csrf
       <input type="text" name="email" placeholder="email"><br>
       <input type="password" name="password" placeholder="Password"><br>

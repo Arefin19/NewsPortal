@@ -16,19 +16,20 @@
     </div>
     <div class="flex second-column">
         <div class="border">
-            <form class="p-3 py-5 profile-form">
+            <form class="p-3 py-5 profile-form" method="POST" action="{{ route("profile.edit", $user->id) }}">
+                @csrf
                 <h4 class="mb-4">Profile Settings</h4>
                 <div class="row mt-2">
-                    <div class="col-md-6 profile-form-div"><label class="labels my-1">Name</label><input type="text" class="form-control" placeholder="Enter First name" value="{{$user->name}}"></div>
+                    <div class="col-md-6 profile-form-div"><label class="labels my-1">Name</label><input type="text" class="form-control" placeholder="Enter First name" name="name" value="{{$user->name}}"></div>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6 profile-form-div"><label class="labels my-1">Email address</label><input type="text" class="form-control" placeholder="Enter Email id" value="{{$user->email}}"></div>
+                    <div class="col-md-6 profile-form-div"><label class="labels my-1">Email address</label><input type="text" class="form-control" placeholder="Enter Email id" name="email" value="{{$user->email}}"></div>
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-6 profile-form-div mt-2">
                         <label class="labels my-1">Newsletter</label>
                         <div class="checkbox-class">
-                            <input type="checkbox" id="news-check" name="news-check" value="">
+                            <input type="checkbox" id="news-check" name="news-check" value="1" @if($user->newsletter == 1) checked @endif>
                             <label for="news-check">I want newsletter</label><br>
                         </div>
                     </div>
@@ -37,126 +38,78 @@
                     <div class="col-md-6 profile-form-div mt-2">
                         <label class="labels my-1">Category Preference</label>
                         <div class="checkbox-class">
-                            <input type="checkbox" id="politics-check" name="politics-check" value="">
+                            <input type="checkbox" id="politics-check" name="categories[]" value="3">
                             <label for="politics-check">Politics</label><br>
                         </div>
                         <div class="checkbox-class">
-                            <input type="checkbox" id="world-check" name="world-check" value="">
+                            <input type="checkbox" id="world-check" name="categories[]" value="6">
                             <label for="world-check">World</label><br>
                         </div>
-                         
+
     					<div class="checkbox-class">
-    					    <input type="checkbox" id="sport-check" name="sport-check" value="">
+    					    <input type="checkbox" id="sport-check" name="categories[]" value="0">
     					    <label for="sport-check">Sport</label><br>
     					</div>
 
 						<div class="checkbox-class">
-						    <input type="checkbox" id="business-check" name="business-check" value="">
+						    <input type="checkbox" id="business-check" name="categories[]" value="1">
 						    <label for="business-check">Business</label><br>
 						</div>
 
 						<div class="checkbox-class">
-						    <input type="checkbox" id="fashion-check" name="fashion-check" value="">
+						    <input type="checkbox" id="fashion-check" name="categories[]" value="2">
 						    <label for="fashion-check">Fashion</label><br>
 						</div>
 
 						<div class="checkbox-class">
-						    <input type="checkbox" id="tech-check" name="tech-check" value="">
+						    <input type="checkbox" id="tech-check" name="categories[]" value="4">
 						    <label for="tech-check">Technology</label><br>
 						</div>
 
 						<div class="checkbox-class">
-						    <input type="checkbox" id="media-check" name="media-check" value="">
+						    <input type="checkbox" id="media-check" name="categories[]" value="6">
 						    <label for="media-check">Media</label><br>
 						</div>
 
                     </div>
                 </div>
-                <div class=" ">
-                    <label class="labels my-1">Push Notification:&nbsp;</label>
-                    <button onclick="startFCM()" class="btn btn-primary btn-flat w-25">Allow</button>
-                </div>
                 <div class="mt-5 text-center"><button class="btn btn-primary btn-flat w-100" type="submit">Save Profile</button></div>
         </form>
         </div>
-        
+
     </div>
 
     <div class="flex second-column">
         <div class="border">
-            <form class="p-3 py-5 profile-form">
-                <div >
-
-                </div>
+            <form class="p-3 py-5 profile-form" method="POST" action="{{ route("profile.dp") }}" enctype="multipart/form-data">
+                @csrf
                 <div class="row mt-2 gap-1">
                     <div class="dp-label">
                         <label class="labels my-2">Change dp</label>
                     </div>
-                    
                     <input type="file" name="file" class="form-control" id="customFile"/>
                 </div>
                 <div class="dp-change-button">
-                    <button class="btn btn-primary" type="button">Change dp</button>
-                </div>                
-        </form>
+                    <button class="btn btn-primary" type="submit">Change dp</button>
+                </div>
+            </form>
         </div>
-        
+    </div>
+
+    <div class="second-column">
+        <div class="border">
+            <form class="p-3 py-5 profile-form">
+                <div class="row mt-2 gap-1">
+                    <div class="dp-label">
+                        <label class="labels my-2">Push Notification</label>
+                    </div>
+                </div>
+                <div class="dp-change-button">
+                     <button onclick="startFCM()" class="btn btn-primary btn-flat w-25">Allow</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
-<script>
-    var firebaseConfig = {
-        apiKey: "AIzaSyCDeRGze7b5wM3czhBC4llPoocFlW3WmG4",
-        authDomain: "push-noti-fb9f5.firebaseapp.com",
-        projectId: "push-noti-fb9f5",
-        storageBucket: "push-noti-fb9f5.appspot.com",
-        messagingSenderId: "342247671730",
-        appId: "1:342247671730:web:2c595f591a3945140046ab"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const messaging = firebase.messaging();
-
-    function startFCM() {
-        messaging
-            .requestPermission()
-            .then(function() {
-                return messaging.getToken()
-            })
-            .then(function(response) {
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-                $.ajax({
-                    url: '{{ route("store.token") }}',
-                    type: 'POST',
-                    data: {
-                        token: response
-                    },
-                    dataType: 'JSON',
-                    success: function(response) {
-                        alert('Token stored.');
-                    },
-                    error: function(error) {
-                        alert(error);
-                    },
-                });
-            }).catch(function(error) {
-                alert(error);
-            });
-    }
-    messaging.onMessage(function(payload) {
-        const title = payload.notification.title;
-        const options = {
-            body: payload.notification.body,
-            icon: payload.notification.icon,
-        };
-        new Notification(title, options);
-    });
-</script>
-
 
 @endsection

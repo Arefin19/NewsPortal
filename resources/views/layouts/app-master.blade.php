@@ -30,5 +30,59 @@
     @include('layouts.partials.footer')
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCDeRGze7b5wM3czhBC4llPoocFlW3WmG4",
+        authDomain: "push-noti-fb9f5.firebaseapp.com",
+        projectId: "push-noti-fb9f5",
+        storageBucket: "push-noti-fb9f5.appspot.com",
+        messagingSenderId: "342247671730",
+        appId: "1:342247671730:web:2c595f591a3945140046ab"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const messaging = firebase.messaging();
+
+    function startFCM() {
+        messaging
+            .requestPermission()
+            .then(function() {
+                return messaging.getToken()
+            })
+            .then(function(response) {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    url: '{{ route("store.token") }}',
+                    type: 'POST',
+                    data: {
+                        token: response
+                    },
+                    dataType: 'JSON',
+                    success: function(response) {
+                        alert('Token stored.');
+                    },
+                    error: function(error) {
+                        alert(error);
+                    },
+                });
+            }).catch(function(error) {
+                alert(error);
+            });
+    }
+    messaging.onMessage(function(payload) {
+        const title = payload.notification.title;
+        const options = {
+            body: payload.notification.body,
+            icon: payload.notification.icon,
+        };
+        new Notification(title, options);
+    });
+</script>
+
 
 </html>

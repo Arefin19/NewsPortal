@@ -8,6 +8,8 @@ use App\Models\Post;
 use App\Models\Conf;
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 use App\Models\User;
+use Mail;
+use App\Mail\userMail;
 
 class AdminController extends Controller
 {
@@ -92,5 +94,20 @@ class AdminController extends Controller
         }
         curl_close($ch);
         dd($result);
+    }
+
+    public function mail(Request $request)
+    {
+        $title = $request->input('title');
+        $body = $request->input('body');
+        $emails = User::pluck('email');
+        $mailData = [
+            "title" => $title,
+            "body" => $body
+        ];
+        foreach ($emails as $email) {
+            Mail::to($email)->send(new UserMail($mailData));
+        }
+        return redirect()->back();
     }
 }

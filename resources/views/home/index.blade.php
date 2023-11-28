@@ -28,7 +28,7 @@
         <div class="article-container">
             <div class="article">
                 @for ($i = 0; $i < 4; $i++) <div class="article-item">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem; height: 20rem;">
                             <img class="card-img-top" src="{{ url($postPopular[$i]->url) }}" alt="">
                             <div class="card-body">
                                 <div class="title-like">
@@ -38,8 +38,8 @@
                                 <p class="article-title"><a href="{{route('post.show', ['id' => $postPopular[$i]->post_id])}}">{{ $postPopular[$i]->title }}</a></p>
                                 <p class="small-text2">{{ $postPopular[$i]->created_at }}</p>
                             </div>
-                            
-                    </div>                    
+
+                    </div>
             </div>
             @endfor
         </div>
@@ -79,9 +79,9 @@
                         <p><a href="{{route('post.show', ['id' => $post[$i]->post_id])}}">{{$post[$i]->title}}</a></p>
                         <p class=" small-text2">{{ $post[$i]->author }}| {{$post[$i]->created_at}}</p>
                     </div>
-                    
+
                 </div>
-                
+
         </div>
         @endfor
 

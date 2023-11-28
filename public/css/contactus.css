@@ -19,14 +19,21 @@
     align-items: center;
 }
 .contact_us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 0rem 3rem;
 }
+
 .contact{
+    display: flex;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 .contact_part{
     display: flex;
+    width: 50%;
     justify-content: space-between;
     flex-direction: column;
 }

@@ -269,7 +269,7 @@ header {
 }
 
 .article-title {
-    height: 20px;
+    height: 40px;
     display: flex;
     align-items: center;
     margin-top: 5px;

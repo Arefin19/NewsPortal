@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\PostLikes;
+use App\Models\Comment;
+
 class PostController extends Controller
 {
     public function show($id)
@@ -13,6 +15,7 @@ class PostController extends Controller
         $userId = auth()->id();
         $post = Post::where('post_id', $id)->first();
         $postLike = PostLikes::where('post_id', $id)->where('user_id', $userId)->first();
+        $comments = Comment::where('post_id', $id)->get();
         if($postLike){
             $isLiked= true;
         }else{
@@ -22,7 +25,7 @@ class PostController extends Controller
             $post->increment('views', 1, ["post_id"=>$id]);
             session(['post_viewed'=> $id ]);
         }
-          return view('home.news')->with(['post' => $post, 'isLiked' => $isLiked]);
+          return view('home.news')->with(['post' => $post, 'isLiked' => $isLiked, 'user' => $userId, 'comments' => $comments]);
     }
 
     public function setLike($id)
@@ -50,6 +53,22 @@ class PostController extends Controller
     } else {
         return redirect()->back()->with('error', 'Like not found');
     }
+    }
+
+    public function addComment($userid, $postid, Request $request){
+
+        $request->validate([
+            'content' => 'required|string',
+        ]);
+
+        $newComment = new Comment();
+        $newComment->user_id = $userid;
+        $newComment->post_id = $postid;
+        $newComment->content = $request->input('content');
+        $newComment->save();
+
+        return redirect()->back();
+
     }
 }
 
