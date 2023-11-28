@@ -15,7 +15,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::post('/admin-login/conf', 'AdminController@conf')->name('admin.conf');
     Route::get($adminRoute, 'AdminController@show')->name('admin.show');
     Route::post('/admin', 'AdminController@createPost')->name('admin.post');
-    Route::get('/news', 'NewsController@news')->name('home.news');
+/*     Route::get('/news', 'NewsController@news')->name('home.news'); */
+    Route::post('/addComments/{userid}/{postid}', 'PostController@addComment')->name('comments.store');
     Route::get('post/{id}', 'PostController@show')->name('post.show');
     Route::post('postLike/{id}', 'PostController@setLike')->name('posts.like');
     Route::post('postRemove/{id}', 'PostController@removeLike')->name('post.removeLike');
